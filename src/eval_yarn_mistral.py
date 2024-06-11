@@ -61,6 +61,10 @@ def chunk_generate(
     up the KV cache. Note that each token still has to attend to
     all tokens in the past.
     """
+    debug = True
+    if debug:
+        return ['debug only as ouptut']
+
     with torch.no_grad():
         """
         input_ids: (b, n)
@@ -161,7 +165,7 @@ def get_pred(
         model,
         tok,
         [input_text],
-        max_tokens=max_tokens,
+        max_tokens=max_tokens, # 40
         chunk_size=128,
         verbose=verbose,
     )[0]
@@ -173,12 +177,15 @@ def load_model(
     model_name: str = "../../../yarn-mistral-7b-128k",
 ) -> Tuple[MistralForCausalLM, AutoTokenizer]:
     print("Loading tokenizer")
-    tok = AutoTokenizer.from_pretrained(model_name)
+    tok = AutoTokenizer.from_pretrained(model_name, 
+            cache_dir="/workspace/asr/megatron.20240606/infbench-20240609/InfiniteBench/cache/")
     tok.pad_token = tok.eos_token
     print("Loading model")
     start_time = time.time()
+    import ipdb; ipdb.set_trace()
     model = MistralForCausalLM.from_pretrained(
-        model_name, device_map="auto", torch_dtype=torch.bfloat16
+        model_name, device_map="auto", torch_dtype=torch.bfloat16,
+        cache_dir="/workspace/asr/megatron.20240606/infbench-20240609/InfiniteBench/cache/"
     )
     print("Time taken:", round(time.time() - start_time))
     return model, tok  # type: ignore
@@ -187,7 +194,7 @@ def load_model(
 if __name__ == "__main__":
     model_name = "yarn-mistral"
     args = parse_args()
-
+    import ipdb; ipdb.set_trace()
     print(json.dumps(vars(args), indent=4))
     data_name = args.task
 
@@ -196,7 +203,7 @@ if __name__ == "__main__":
     model, tok = load_model(args.model_path)
 
     # Data
-    result_dir = Path(args.output_dir, model_name)
+    result_dir = Path(args.output_dir, model_name) # PosixPath('../results/yarn-mistral') NOTE
     result_dir.mkdir(exist_ok=True, parents=True)
     examples = load_data(data_name, data_dir=args.data_dir)
 
@@ -218,7 +225,7 @@ if __name__ == "__main__":
     print(f"Verbose: {args.verbose}")
     print(f"Max tokens: {max_tokens}")
     for i in range(args.start_idx, args.stop_idx):
-        eg = examples[i]
+        eg = examples[i] # a dict: dict_keys(['id', 'context', 'input', 'answer']) for 'longbook_qa_eng' one sample NOTE ||| dict_keys(['id', 'context', 'input', 'answer', 'options']) for 'longbook_choice_eng' one sample, eg['answer']=['Walking Georgie']; and eg['options']=['Walking Georgie', 'Taking care of Totty', 'Working in the dairy', 'Light housework']
         input_text = create_prompt(eg, data_name, model_name, args.data_dir)
         print(f"====== Example {i} ======")
         pred = get_pred(
