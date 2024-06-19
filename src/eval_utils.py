@@ -107,7 +107,7 @@ def create_prompt(eg: dict, data_name: str, model_name: str, data_dir) -> str:
         eg: example dict
         data_name: name of the dataset/task
     """
-    data_dir = Path(data_dir)
+    data_dir = Path(data_dir) # model_name = 'yarn-mistral'
     if model_name == "gpt4":
         # Math.Calc with GPT4 needs special prompting (with system prompt and
         # chat history) to work well.
@@ -152,7 +152,7 @@ def create_prompt(eg: dict, data_name: str, model_name: str, data_dir) -> str:
         prompt = template.format(context=script)
         return prompt
     # ==================== Long book tasks
-    elif data_name in [
+    elif data_name in [ # 'longbook_qa_eng'
         "longbook_choice_eng",
         "longbook_qa_eng",
         "longbook_sum_eng",
@@ -182,7 +182,7 @@ def create_prompt(eg: dict, data_name: str, model_name: str, data_dir) -> str:
             return template.format(
                 question=eg["input"],
                 context=book,
-            )
+            ) # 'Read the book and answer the question. Be very concise in your answer.\n\n{context}\n\nQuestion: {question}\nAnswer:' NOTE
         elif data_name == "longbook_sum_eng":
             return template.format(
                 context=book,

@@ -39,7 +39,10 @@ def parse_args() -> Namespace:
     p.add_argument("--pxout_txt", type=str, default=None, help="LLM predicted txt file name (one sample one line).")  
     p.add_argument("--pxref_json", type=str, default=None, help="LLM reference file name in json format.")  
     p.add_argument("--pxout_ref_json", type=str, default=None, help="LLM predicted results with reference, file name in json format.")  
+    p.add_argument("--cache_dir", type=str, default=None, help="cache dir for model/tokenizer files.")  
     
-    p.add_argument("--use_zero_scrolls", action='store_true', help="use zero-scrolls choice pattern to match longbook_choice_eng or not.")  
+    p.add_argument("--use_zero_scrolls", action='store_true', help="use zero-scrolls choice pattern to match longbook_choice_eng or not. [default=False]")  
+
+    p.add_argument("--sep_by_assistant", action='store_true', help="use assistant: for sample separating or not. [default=False]")  
 
     return p.parse_args()

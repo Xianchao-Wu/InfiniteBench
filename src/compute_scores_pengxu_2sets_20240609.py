@@ -424,7 +424,7 @@ def compute_scores(preds_path, data_name: str, model_name: str, args):
     preds = get_preds(preds, data_name)
 
     acc = get_score(labels, preds, data_name, model_name, args)
-    print(acc)
+    print('final display: ', acc)
 
 
 ALL_TASKS = [
@@ -459,6 +459,8 @@ ALL_TASKS_ORIG = [
 
 if __name__ == "__main__":
     args = parse_args()
+    print(json.dumps(vars(args), indent=4))
+
     if args.task == "all":
         tasks = ALL_TASKS
     else:

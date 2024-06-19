@@ -6,6 +6,23 @@ from datetime import datetime
 from args import parse_args
 from eval_utils import dump_jsonl, get_answer
 
+def load_out_sep_by_assistant(pxout_txt_fn):
+    predictions = list()
+    with open(pxout_txt_fn, 'r') as f:
+        one_answer = ''
+        for line in f.readlines():
+            line = line.strip()
+            if line.startswith('assistant: '):
+                if len(one_answer) > 0:
+                    predictions.append(one_answer)
+                    one_answer = ''
+                one_answer = line[len('assistant: '):]
+            else:
+                one_answer += '\n' + line
+        if len(one_answer) > 0:
+            predictions.append(one_answer)
+    return predictions
+
 def load_out(pxout_txt_fn):
     outs = list()
     with open(pxout_txt_fn) as br:
@@ -99,7 +116,12 @@ if __name__ == "__main__":
     if args.pxref_json is None or not Path(args.pxref_json).exists():
         raise('Error: system reference file [{}] is None or not exists.'.format(args.pxref_json))
 
-    outs = load_out(args.pxout_txt)
+    #import ipdb; ipdb.set_trace()
+    if args.sep_by_assistant:
+        outs = load_out_sep_by_assistant(args.pxout_txt)
+    else:
+        outs = load_out(args.pxout_txt)
+
     refs = load_ref(args.pxref_json, args.task)
     
     flag = str(datetime.now()).replace(' ', '-').replace(':', '-')
