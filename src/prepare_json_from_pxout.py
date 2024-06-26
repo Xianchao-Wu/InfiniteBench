@@ -123,9 +123,17 @@ if __name__ == "__main__":
         outs = load_out(args.pxout_txt)
 
     refs = load_ref(args.pxref_json, args.task)
-    
-    flag = str(datetime.now()).replace(' ', '-').replace(':', '-')
-    output_path = args.pxout_txt + '.' + flag + '.json'
+
+    # determine the output json file name:
+    if args.pxout_ref_json is None: 
+        flag = str(datetime.now()).replace(' ', '-').replace(':', '-')
+        output_path = args.pxout_txt + '.' + flag + '.json'
+    else:
+        output_path = args.pxout_ref_json
+
+    print('combine tst.out and ref, output to file: {}'.format(output_path))
+
+    # combine tst.out and ref to <ref, test.out> for next step scoring:
     infb_json_fn = combine_to_infb(outs, refs, output_path)
 
 

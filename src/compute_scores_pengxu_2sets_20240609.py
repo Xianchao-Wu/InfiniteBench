@@ -424,7 +424,7 @@ def compute_scores(preds_path, data_name: str, model_name: str, args):
     preds = get_preds(preds, data_name)
 
     acc = get_score(labels, preds, data_name, model_name, args)
-    print('final display: ', acc)
+    print('final display: ', acc, preds_path, data_name, model_name)
 
 
 ALL_TASKS = [
