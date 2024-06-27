@@ -35,7 +35,7 @@ claude2_templates = {
     "kv_retrieval": "There is an important info hidden inside a lot of irrelevant text. Find it. I will quiz you about the important information there.\n\n{context}\n{input}",
     "longbook_sum_eng": "Summarize the following book.\n\n{context}",  # noqa
     "longbook_choice_eng": "Read the book and answer the question.\n\n{context}\n\nQuestion: {question}\n\nOnly one of the following options is correct, tell me the answer using one single letter (A, B, C, or D). Don't say anything else.\nA. {OPTION_A}\nB. {OPTION_B}\nC. {OPTION_C}\nD. {OPTION_D}",  # noqa
-    "longbook_qa_eng": "Read the novel below and answer a question:\n\n{context}\n\n{input}\nPlease answer as short as possible. The answer is: ",  # noqa
+    "longbook_qa_eng": "Read the novel below and answer a question:\n\n{context}\n\n{question}\nPlease answer as short as possible. The answer is: ",  # noqa
     "longbook_qa_chn": "请根据以下书籍回答我的问题。\n\n{context}\n\n问题：{question}\n请尽量简短地回答。",  # noqa
     "math_find": "{prefix}\n\n{context}\n\n{input}",
     "math_calc": "Let us calculate the intermediate values of an expression.\nExpression: 1 + 3 + 4\nValues: [1, 4, 8]\n\nExpression: 8 - 3 + 2 - 4\nValues: [8, 5, 7, 3]\n\nExpression: {context}\nValues:",  # noqa
@@ -49,8 +49,10 @@ kimi_templates = {
     "number_string": "There is an important info hidden inside a lot of irrelevant text. Find it. I will quiz you about the important information there.\n\n{context}\n{input}\nThe sequence of digits is",  # noqa
     "kv_retrieval": "Extract the value corresponding to the specified key in the JSON object below.\n\n{context}\n{input}",  # noqa
     "longbook_sum_eng": "Summarize the book below:\n\n{file:{context}}",  # noqa
-    "longbook_choice_eng": "Read the book and answer the question.\n\nQuestion: {question}\n\nOnly one of the following options is correct, tell me the answer using one single letter (A, B, C, or D). Don't say anything else.\nA. {OPTION_A}\nB. {OPTION_B}\nC. {OPTION_C}\nD. {OPTION_D}" + "{file:{document}}",  # noqa
-    "longbook_qa_eng": "Read the book below and answer a question.\n\nQuestion: {question}\n\nBe very concise." + "{file:{context}}",  # noqa
+    #"longbook_choice_eng": "Read the book and answer the question.\n\nQuestion: {question}\n\nOnly one of the following options is correct, tell me the answer using one single letter (A, B, C, or D). Don't say anything else.\nA. {OPTION_A}\nB. {OPTION_B}\nC. {OPTION_C}\nD. {OPTION_D}" + "{file:{document}}",  # noqa
+    "longbook_choice_eng": "Read the book and answer the question.\n\nQuestion: {question}\n\nOnly one of the following options is correct, tell me the answer using one single letter (A, B, C, or D). Don't say anything else.\nA. {OPTION_A}\nB. {OPTION_B}\nC. {OPTION_C}\nD. {OPTION_D}" + "{context}",  # noqa
+    #"longbook_qa_eng": "Read the book below and answer a question.\n\nQuestion: {question}\n\nBe very concise." + "{file:{context}}",  # noqa
+    "longbook_qa_eng": "Read the book below and answer a question.\n\nQuestion: {question}\n\nBe very concise." + "{context}",  # noqa
     "longbook_qa_chn": "阅读以下书籍然后回答问题。\n\n问题：{question}\n答案：" + "{file:{context}}",  # noqa
     "math_find": "{prefix}\n\n{context}\n\n{input}",
     "math_calc": "Let us calculate the intermediate values of an expression.\nExpression: 1 + 3 + 4\nValues: [1, 4, 8]\n\nExpression: 8 - 3 + 2 - 4\nValues: [8, 5, 7, 3]\n\nExpression: {context}\nValues:",  # noqa

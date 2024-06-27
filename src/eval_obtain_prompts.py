@@ -69,7 +69,7 @@ def load_tokenizer(
     model_name: str = None, 
     cache_dir: str = None,
 ) -> AutoTokenizer:
-    print("Loading tokenizer")
+    print("Loading tokenizer: {}".format(model_name))
     tok = AutoTokenizer.from_pretrained(model_name, 
             cache_dir=cache_dir)
     return tok  # type: ignore
@@ -77,6 +77,8 @@ def load_tokenizer(
 if __name__ == "__main__":
     model_name = "yarn-mistral"
     args = parse_args()
+    if args.model_name is not None and len(args.model_name) > 0:
+        model_name = args.model_name
     #import ipdb; ipdb.set_trace()
     print(json.dumps(vars(args), indent=4))
     data_name = args.task
@@ -94,7 +96,7 @@ if __name__ == "__main__":
     if args.stop_idx is None:
         args.stop_idx = len(examples)
         output_path = (
-            result_dir / f"prompts_{data_name}_{TRUNCATE_LEN}.json"
+            result_dir / f"prompts_{data_name}_{TRUNCATE_LEN}_template_{model_name}.json"
         )
     else:
         output_path = (

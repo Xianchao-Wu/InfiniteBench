@@ -114,6 +114,7 @@ def create_prompt(eg: dict, data_name: str, model_name: str, data_dir) -> str:
         if data_name == "math_calc":
             return eg["context"]
 
+    #import ipdb; ipdb.set_trace()
     templates = MODEL_TO_PROMPT_TEMPLATE[model_name]
     template = templates[data_name]
     # ================= Code tasks

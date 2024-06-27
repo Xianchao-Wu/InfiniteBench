@@ -9,11 +9,13 @@
 # TODO this is for 'longbook_qa_eng' and 'longbook_choice_eng'
 
 #for atask in longbook_qa_eng longbook_choice_eng
-for atask in longbook_qa_eng
+#for atask in longbook_qa_eng
+for atask in longbook_choice_eng
 do
 	echo $atask
+	#for mname in "kimi" "yarn-mistral"
 	#for mname in "claude2" "gpt4" "kimi" "yarn-mistral"
-	for mname in "kimi" "yarn-mistral"
+	for mname in "kimi"
 	do
 		python eval_obtain_prompts.py \
 			--task $atask \

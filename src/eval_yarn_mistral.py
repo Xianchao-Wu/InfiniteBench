@@ -100,7 +100,7 @@ def chunk_generate(
         print(f"Number of chunks: {len(chunk_lo)}, generating...") # 737 chunks NOTE
         start_time = time.time()
 
-        import ipdb; ipdb.set_trace()
+        #import ipdb; ipdb.set_trace()
         for chunk_i, (chunk_lo, chunk_hi) in enumerate(
             zip(chunk_lo, chunk_hi)
         ):
@@ -137,7 +137,7 @@ def chunk_generate(
             kv_cache = new_cache
         kv_cache_len = kv_cache[0][0].shape[2]
         
-        import ipdb; ipdb.set_trace()
+        #import ipdb; ipdb.set_trace()
         outputs = model.generate(
             input_ids=input_ids[:, -1:],
             attention_mask=attention_mask[:, -kv_cache_len - 1 :],
@@ -173,7 +173,7 @@ def get_pred(
         print("...")
         print(input_text[-200:])
         print("=====================================")
-    import ipdb; ipdb.set_trace()
+    #import ipdb; ipdb.set_trace()
     output = chunk_generate(
         model, # <class 'yarn_mistral.modeling_mistral_yarn.MistralForCausalLM'>
         tok, # <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>
@@ -207,7 +207,7 @@ def load_model(
 if __name__ == "__main__":
     model_name = "yarn-mistral"
     args = parse_args()
-    import ipdb; ipdb.set_trace()
+    #import ipdb; ipdb.set_trace()
     print(json.dumps(vars(args), indent=4))
     data_name = args.task
 
@@ -245,7 +245,7 @@ if __name__ == "__main__":
         eg = examples[i] # a dict: dict_keys(['id', 'context', 'input', 'answer']) for 'longbook_qa_eng' one sample NOTE ||| dict_keys(['id', 'context', 'input', 'answer', 'options']) for 'longbook_choice_eng' one sample, eg['answer']=['Walking Georgie']; and eg['options']=['Walking Georgie', 'Taking care of Totty', 'Working in the dairy', 'Light housework']
         input_text = create_prompt(eg, data_name, model_name, args.data_dir)
         print(f"====== Example {i} ======")
-        import ipdb; ipdb.set_trace()
+        #import ipdb; ipdb.set_trace()
         pred = get_pred(
             model, tok, input_text, max_tokens=max_tokens, verbose=args.verbose,
             tok_llama3=tok_llama3
