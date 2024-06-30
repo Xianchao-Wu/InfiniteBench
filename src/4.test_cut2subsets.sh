@@ -30,7 +30,13 @@ do
 	tfn3="/workspace/asr/megatron.20240606/infbench-20240609/${data_name}/${data_name}_eng.e5_mistral_retriever_chunkbysents1200_5_generate_70b_test_greedy_0_1000_1056_ret.txt_0920"
 	tfn4="/workspace/asr/megatron.20240606/infbench-20240609/${data_name}_0625/${data_name}_eng.e5_mistral_retriever_chunkbysents1200_5_generate_70b_test_greedy_0_1000_1100.txt_0920"
 	tfn5="/workspace/asr/megatron.20240606/infbench-20240609/${data_name}_0625/${data_name}_eng.e5_mistral_retriever_chunkbysents1200_5_generate_70b_test_greedy_0_1000_1100_ret.txt_0920"
-	for tstfn in $tfn1 $tfn2 $tfn3 $tfn4 $tfn5
+
+	tfn6="/workspace/asr/megatron.20240606/infbench-20240609/nqa_128k_long_25_pp1/${data_name}_eng.e5_mistral_retriever_chunkbysents1200_5_generate_70b_test_greedy_0_1000_148.txt_0920"
+	tfn7="/workspace/asr/megatron.20240606/infbench-20240609/nqa_128k_long_25_pp1/${data_name}_eng.e5_mistral_retriever_chunkbysents1200_5_generate_70b_test_greedy_0_1000_148_ret.txt_0920"
+
+	# TODO TODO TODO
+	#for tstfn in $tfn1 $tfn2 $tfn3 $tfn4 $tfn5
+	for tstfn in $tfn6 $tfn7
 	do
 		tstfn_same="$tstfn.same"
 		tstfn_cut="$tstfn.cut"
