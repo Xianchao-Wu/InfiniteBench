@@ -1,0 +1,2954 @@
+longbook_qa_eng
+/usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+{
+    "task": "longbook_qa_eng",
+    "data_dir": "../data",
+    "output_dir": "../prompts-debug-2subsets/",
+    "model_path": "Qwen/Qwen2-72B-Instruct",
+    "model_name": "gpt4",
+    "start_idx": 0,
+    "stop_idx": null,
+    "verbose": false,
+    "device": "cuda",
+    "pxout_txt": null,
+    "pxref_json": null,
+    "pxout_ref_json": null,
+    "cache_dir": "/workspace/asr/megatron.20240606/qwen",
+    "use_zero_scrolls": false,
+    "sep_by_assistant": false
+}
+==== Evaluation ====
+# examples: 351
+Start index: 0
+Stop index: 351
+Verbose: False
+Max tokens: 40
+====== Example 0 ======
+Truncating...
+# tokens before: 87991 
+# tokens after: 87991
+cutinfo[idx>=0,is_cut,data_name]: 0 False longbook_qa_eng
+====== Example 1 ======
+Truncating...
+# tokens before: 87991 
+# tokens after: 87991
+cutinfo[idx>=0,is_cut,data_name]: 1 False longbook_qa_eng
+====== Example 2 ======
+Truncating...
+# tokens before: 87979 
+# tokens after: 87979
+cutinfo[idx>=0,is_cut,data_name]: 2 False longbook_qa_eng
+====== Example 3 ======
+Truncating...
+# tokens before: 87981 
+# tokens after: 87981
+cutinfo[idx>=0,is_cut,data_name]: 3 False longbook_qa_eng
+====== Example 4 ======
+Truncating...
+# tokens before: 87982 
+# tokens after: 87982
+cutinfo[idx>=0,is_cut,data_name]: 4 False longbook_qa_eng
+====== Example 5 ======
+Truncating...
+# tokens before: 237807 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 5 True longbook_qa_eng
+====== Example 6 ======
+Truncating...
+# tokens before: 237805 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 6 True longbook_qa_eng
+====== Example 7 ======
+Truncating...
+# tokens before: 237810 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 7 True longbook_qa_eng
+====== Example 8 ======
+Truncating...
+# tokens before: 237817 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 8 True longbook_qa_eng
+====== Example 9 ======
+Truncating...
+# tokens before: 237810 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 9 True longbook_qa_eng
+====== Example 10 ======
+Truncating...
+# tokens before: 237814 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 10 True longbook_qa_eng
+====== Example 11 ======
+Truncating...
+# tokens before: 90507 
+# tokens after: 90507
+cutinfo[idx>=0,is_cut,data_name]: 11 False longbook_qa_eng
+====== Example 12 ======
+Truncating...
+# tokens before: 90510 
+# tokens after: 90510
+cutinfo[idx>=0,is_cut,data_name]: 12 False longbook_qa_eng
+====== Example 13 ======
+Truncating...
+# tokens before: 90521 
+# tokens after: 90521
+cutinfo[idx>=0,is_cut,data_name]: 13 False longbook_qa_eng
+====== Example 14 ======
+Truncating...
+# tokens before: 90507 
+# tokens after: 90507
+cutinfo[idx>=0,is_cut,data_name]: 14 False longbook_qa_eng
+====== Example 15 ======
+Truncating...
+# tokens before: 90511 
+# tokens after: 90511
+cutinfo[idx>=0,is_cut,data_name]: 15 False longbook_qa_eng
+====== Example 16 ======
+Truncating...
+# tokens before: 90508 
+# tokens after: 90508
+cutinfo[idx>=0,is_cut,data_name]: 16 False longbook_qa_eng
+====== Example 17 ======
+Truncating...
+# tokens before: 90507 
+# tokens after: 90507
+cutinfo[idx>=0,is_cut,data_name]: 17 False longbook_qa_eng
+====== Example 18 ======
+Truncating...
+# tokens before: 135063 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 18 True longbook_qa_eng
+====== Example 19 ======
+Truncating...
+# tokens before: 135062 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 19 True longbook_qa_eng
+====== Example 20 ======
+Truncating...
+# tokens before: 135069 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 20 True longbook_qa_eng
+====== Example 21 ======
+Truncating...
+# tokens before: 135064 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 21 True longbook_qa_eng
+====== Example 22 ======
+Truncating...
+# tokens before: 135080 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 22 True longbook_qa_eng
+====== Example 23 ======
+Truncating...
+# tokens before: 135065 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 23 True longbook_qa_eng
+====== Example 24 ======
+Truncating...
+# tokens before: 130864 
+# tokens after: 130864
+cutinfo[idx>=0,is_cut,data_name]: 24 False longbook_qa_eng
+====== Example 25 ======
+Truncating...
+# tokens before: 130860 
+# tokens after: 130860
+cutinfo[idx>=0,is_cut,data_name]: 25 False longbook_qa_eng
+====== Example 26 ======
+Truncating...
+# tokens before: 130861 
+# tokens after: 130861
+cutinfo[idx>=0,is_cut,data_name]: 26 False longbook_qa_eng
+====== Example 27 ======
+Truncating...
+# tokens before: 130860 
+# tokens after: 130860
+cutinfo[idx>=0,is_cut,data_name]: 27 False longbook_qa_eng
+====== Example 28 ======
+Truncating...
+# tokens before: 130859 
+# tokens after: 130859
+cutinfo[idx>=0,is_cut,data_name]: 28 False longbook_qa_eng
+====== Example 29 ======
+Truncating...
+# tokens before: 130866 
+# tokens after: 130866
+cutinfo[idx>=0,is_cut,data_name]: 29 False longbook_qa_eng
+====== Example 30 ======
+Truncating...
+# tokens before: 155802 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 30 True longbook_qa_eng
+====== Example 31 ======
+Truncating...
+# tokens before: 155794 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 31 True longbook_qa_eng
+====== Example 32 ======
+Truncating...
+# tokens before: 155806 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 32 True longbook_qa_eng
+====== Example 33 ======
+Truncating...
+# tokens before: 155798 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 33 True longbook_qa_eng
+====== Example 34 ======
+Truncating...
+# tokens before: 155802 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 34 True longbook_qa_eng
+====== Example 35 ======
+Truncating...
+# tokens before: 244992 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 35 True longbook_qa_eng
+====== Example 36 ======
+Truncating...
+# tokens before: 245000 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 36 True longbook_qa_eng
+====== Example 37 ======
+Truncating...
+# tokens before: 244980 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 37 True longbook_qa_eng
+====== Example 38 ======
+Truncating...
+# tokens before: 244983 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 38 True longbook_qa_eng
+====== Example 39 ======
+Truncating...
+# tokens before: 244986 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 39 True longbook_qa_eng
+====== Example 40 ======
+Truncating...
+# tokens before: 94789 
+# tokens after: 94789
+cutinfo[idx>=0,is_cut,data_name]: 40 False longbook_qa_eng
+====== Example 41 ======
+Truncating...
+# tokens before: 94787 
+# tokens after: 94787
+cutinfo[idx>=0,is_cut,data_name]: 41 False longbook_qa_eng
+====== Example 42 ======
+Truncating...
+# tokens before: 94789 
+# tokens after: 94789
+cutinfo[idx>=0,is_cut,data_name]: 42 False longbook_qa_eng
+====== Example 43 ======
+Truncating...
+# tokens before: 94795 
+# tokens after: 94795
+cutinfo[idx>=0,is_cut,data_name]: 43 False longbook_qa_eng
+====== Example 44 ======
+Truncating...
+# tokens before: 94784 
+# tokens after: 94784
+cutinfo[idx>=0,is_cut,data_name]: 44 False longbook_qa_eng
+====== Example 45 ======
+Truncating...
+# tokens before: 255555 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 45 True longbook_qa_eng
+====== Example 46 ======
+Truncating...
+# tokens before: 255548 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 46 True longbook_qa_eng
+====== Example 47 ======
+Truncating...
+# tokens before: 255550 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 47 True longbook_qa_eng
+====== Example 48 ======
+Truncating...
+# tokens before: 255543 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 48 True longbook_qa_eng
+====== Example 49 ======
+Truncating...
+# tokens before: 255544 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 49 True longbook_qa_eng
+====== Example 50 ======
+Truncating...
+# tokens before: 255545 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 50 True longbook_qa_eng
+====== Example 51 ======
+Truncating...
+# tokens before: 398632 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 51 True longbook_qa_eng
+====== Example 52 ======
+Truncating...
+# tokens before: 398630 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 52 True longbook_qa_eng
+====== Example 53 ======
+Truncating...
+# tokens before: 398631 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 53 True longbook_qa_eng
+====== Example 54 ======
+Truncating...
+# tokens before: 398632 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 54 True longbook_qa_eng
+====== Example 55 ======
+Truncating...
+# tokens before: 398635 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 55 True longbook_qa_eng
+====== Example 56 ======
+Truncating...
+# tokens before: 233519 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 56 True longbook_qa_eng
+====== Example 57 ======
+Truncating...
+# tokens before: 233523 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 57 True longbook_qa_eng
+====== Example 58 ======
+Truncating...
+# tokens before: 233516 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 58 True longbook_qa_eng
+====== Example 59 ======
+Truncating...
+# tokens before: 233523 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 59 True longbook_qa_eng
+====== Example 60 ======
+Truncating...
+# tokens before: 233516 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 60 True longbook_qa_eng
+====== Example 61 ======
+Truncating...
+# tokens before: 142850 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 61 True longbook_qa_eng
+====== Example 62 ======
+Truncating...
+# tokens before: 142861 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 62 True longbook_qa_eng
+====== Example 63 ======
+Truncating...
+# tokens before: 142855 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 63 True longbook_qa_eng
+====== Example 64 ======
+Truncating...
+# tokens before: 142849 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 64 True longbook_qa_eng
+====== Example 65 ======
+Truncating...
+# tokens before: 142856 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 65 True longbook_qa_eng
+====== Example 66 ======
+Truncating...
+# tokens before: 539304 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 66 True longbook_qa_eng
+====== Example 67 ======
+Truncating...
+# tokens before: 539310 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 67 True longbook_qa_eng
+====== Example 68 ======
+Truncating...
+# tokens before: 539305 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 68 True longbook_qa_eng
+====== Example 69 ======
+Truncating...
+# tokens before: 539305 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 69 True longbook_qa_eng
+====== Example 70 ======
+Truncating...
+# tokens before: 539305 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 70 True longbook_qa_eng
+====== Example 71 ======
+Truncating...
+# tokens before: 222833 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 71 True longbook_qa_eng
+====== Example 72 ======
+Truncating...
+# tokens before: 222837 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 72 True longbook_qa_eng
+====== Example 73 ======
+Truncating...
+# tokens before: 222835 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 73 True longbook_qa_eng
+====== Example 74 ======
+Truncating...
+# tokens before: 222830 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 74 True longbook_qa_eng
+====== Example 75 ======
+Truncating...
+# tokens before: 222835 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 75 True longbook_qa_eng
+====== Example 76 ======
+Truncating...
+# tokens before: 384927 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 76 True longbook_qa_eng
+====== Example 77 ======
+Truncating...
+# tokens before: 384919 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 77 True longbook_qa_eng
+====== Example 78 ======
+Truncating...
+# tokens before: 384935 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 78 True longbook_qa_eng
+====== Example 79 ======
+Truncating...
+# tokens before: 384925 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 79 True longbook_qa_eng
+====== Example 80 ======
+Truncating...
+# tokens before: 384927 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 80 True longbook_qa_eng
+====== Example 81 ======
+Truncating...
+# tokens before: 89706 
+# tokens after: 89706
+cutinfo[idx>=0,is_cut,data_name]: 81 False longbook_qa_eng
+====== Example 82 ======
+Truncating...
+# tokens before: 89701 
+# tokens after: 89701
+cutinfo[idx>=0,is_cut,data_name]: 82 False longbook_qa_eng
+====== Example 83 ======
+Truncating...
+# tokens before: 89701 
+# tokens after: 89701
+cutinfo[idx>=0,is_cut,data_name]: 83 False longbook_qa_eng
+====== Example 84 ======
+Truncating...
+# tokens before: 89701 
+# tokens after: 89701
+cutinfo[idx>=0,is_cut,data_name]: 84 False longbook_qa_eng
+====== Example 85 ======
+Truncating...
+# tokens before: 89707 
+# tokens after: 89707
+cutinfo[idx>=0,is_cut,data_name]: 85 False longbook_qa_eng
+====== Example 86 ======
+Truncating...
+# tokens before: 265650 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 86 True longbook_qa_eng
+====== Example 87 ======
+Truncating...
+# tokens before: 265652 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 87 True longbook_qa_eng
+====== Example 88 ======
+Truncating...
+# tokens before: 265645 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 88 True longbook_qa_eng
+====== Example 89 ======
+Truncating...
+# tokens before: 265644 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 89 True longbook_qa_eng
+====== Example 90 ======
+Truncating...
+# tokens before: 265647 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 90 True longbook_qa_eng
+====== Example 91 ======
+Truncating...
+# tokens before: 204256 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 91 True longbook_qa_eng
+====== Example 92 ======
+Truncating...
+# tokens before: 204266 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 92 True longbook_qa_eng
+====== Example 93 ======
+Truncating...
+# tokens before: 204254 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 93 True longbook_qa_eng
+====== Example 94 ======
+Truncating...
+# tokens before: 204253 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 94 True longbook_qa_eng
+====== Example 95 ======
+Truncating...
+# tokens before: 204262 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 95 True longbook_qa_eng
+====== Example 96 ======
+Truncating...
+# tokens before: 152827 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 96 True longbook_qa_eng
+====== Example 97 ======
+Truncating...
+# tokens before: 152820 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 97 True longbook_qa_eng
+====== Example 98 ======
+Truncating...
+# tokens before: 152820 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 98 True longbook_qa_eng
+====== Example 99 ======
+Truncating...
+# tokens before: 152809 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 99 True longbook_qa_eng
+====== Example 100 ======
+Truncating...
+# tokens before: 152826 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 100 True longbook_qa_eng
+====== Example 101 ======
+Truncating...
+# tokens before: 744652 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 101 True longbook_qa_eng
+====== Example 102 ======
+Truncating...
+# tokens before: 744644 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 102 True longbook_qa_eng
+====== Example 103 ======
+Truncating...
+# tokens before: 744645 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 103 True longbook_qa_eng
+====== Example 104 ======
+Truncating...
+# tokens before: 744643 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 104 True longbook_qa_eng
+====== Example 105 ======
+Truncating...
+# tokens before: 744640 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 105 True longbook_qa_eng
+====== Example 106 ======
+Truncating...
+# tokens before: 245880 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 106 True longbook_qa_eng
+====== Example 107 ======
+Truncating...
+# tokens before: 245883 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 107 True longbook_qa_eng
+====== Example 108 ======
+Truncating...
+# tokens before: 245881 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 108 True longbook_qa_eng
+====== Example 109 ======
+Truncating...
+# tokens before: 245882 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 109 True longbook_qa_eng
+====== Example 110 ======
+Truncating...
+# tokens before: 245883 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 110 True longbook_qa_eng
+====== Example 111 ======
+Truncating...
+# tokens before: 604813 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 111 True longbook_qa_eng
+====== Example 112 ======
+Truncating...
+# tokens before: 604808 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 112 True longbook_qa_eng
+====== Example 113 ======
+Truncating...
+# tokens before: 604807 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 113 True longbook_qa_eng
+====== Example 114 ======
+Truncating...
+# tokens before: 604810 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 114 True longbook_qa_eng
+====== Example 115 ======
+Truncating...
+# tokens before: 604809 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 115 True longbook_qa_eng
+====== Example 116 ======
+Truncating...
+# tokens before: 132858 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 116 True longbook_qa_eng
+====== Example 117 ======
+Truncating...
+# tokens before: 132855 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 117 True longbook_qa_eng
+====== Example 118 ======
+Truncating...
+# tokens before: 132856 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 118 True longbook_qa_eng
+====== Example 119 ======
+Truncating...
+# tokens before: 132856 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 119 True longbook_qa_eng
+====== Example 120 ======
+Truncating...
+# tokens before: 132855 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 120 True longbook_qa_eng
+====== Example 121 ======
+Truncating...
+# tokens before: 264137 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 121 True longbook_qa_eng
+====== Example 122 ======
+Truncating...
+# tokens before: 264133 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 122 True longbook_qa_eng
+====== Example 123 ======
+Truncating...
+# tokens before: 264134 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 123 True longbook_qa_eng
+====== Example 124 ======
+Truncating...
+# tokens before: 264126 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 124 True longbook_qa_eng
+====== Example 125 ======
+Truncating...
+# tokens before: 264134 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 125 True longbook_qa_eng
+====== Example 126 ======
+Truncating...
+# tokens before: 407199 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 126 True longbook_qa_eng
+====== Example 127 ======
+Truncating...
+# tokens before: 407205 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 127 True longbook_qa_eng
+====== Example 128 ======
+Truncating...
+# tokens before: 407199 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 128 True longbook_qa_eng
+====== Example 129 ======
+Truncating...
+# tokens before: 407201 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 129 True longbook_qa_eng
+====== Example 130 ======
+Truncating...
+# tokens before: 407206 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 130 True longbook_qa_eng
+====== Example 131 ======
+Truncating...
+# tokens before: 91719 
+# tokens after: 91719
+cutinfo[idx>=0,is_cut,data_name]: 131 False longbook_qa_eng
+====== Example 132 ======
+Truncating...
+# tokens before: 91720 
+# tokens after: 91720
+cutinfo[idx>=0,is_cut,data_name]: 132 False longbook_qa_eng
+====== Example 133 ======
+Truncating...
+# tokens before: 91722 
+# tokens after: 91722
+cutinfo[idx>=0,is_cut,data_name]: 133 False longbook_qa_eng
+====== Example 134 ======
+Truncating...
+# tokens before: 91717 
+# tokens after: 91717
+cutinfo[idx>=0,is_cut,data_name]: 134 False longbook_qa_eng
+====== Example 135 ======
+Truncating...
+# tokens before: 91721 
+# tokens after: 91721
+cutinfo[idx>=0,is_cut,data_name]: 135 False longbook_qa_eng
+====== Example 136 ======
+Truncating...
+# tokens before: 144045 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 136 True longbook_qa_eng
+====== Example 137 ======
+Truncating...
+# tokens before: 144041 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 137 True longbook_qa_eng
+====== Example 138 ======
+Truncating...
+# tokens before: 144041 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 138 True longbook_qa_eng
+====== Example 139 ======
+Truncating...
+# tokens before: 144041 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 139 True longbook_qa_eng
+====== Example 140 ======
+Truncating...
+# tokens before: 144044 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 140 True longbook_qa_eng
+====== Example 141 ======
+Truncating...
+# tokens before: 213788 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 141 True longbook_qa_eng
+====== Example 142 ======
+Truncating...
+# tokens before: 213797 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 142 True longbook_qa_eng
+====== Example 143 ======
+Truncating...
+# tokens before: 213792 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 143 True longbook_qa_eng
+====== Example 144 ======
+Truncating...
+# tokens before: 213792 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 144 True longbook_qa_eng
+====== Example 145 ======
+Truncating...
+# tokens before: 213793 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 145 True longbook_qa_eng
+====== Example 146 ======
+Truncating...
+# tokens before: 121698 
+# tokens after: 121698
+cutinfo[idx>=0,is_cut,data_name]: 146 False longbook_qa_eng
+====== Example 147 ======
+Truncating...
+# tokens before: 121698 
+# tokens after: 121698
+cutinfo[idx>=0,is_cut,data_name]: 147 False longbook_qa_eng
+====== Example 148 ======
+Truncating...
+# tokens before: 121708 
+# tokens after: 121708
+cutinfo[idx>=0,is_cut,data_name]: 148 False longbook_qa_eng
+====== Example 149 ======
+Truncating...
+# tokens before: 121702 
+# tokens after: 121702
+cutinfo[idx>=0,is_cut,data_name]: 149 False longbook_qa_eng
+====== Example 150 ======
+Truncating...
+# tokens before: 121700 
+# tokens after: 121700
+cutinfo[idx>=0,is_cut,data_name]: 150 False longbook_qa_eng
+====== Example 151 ======
+Truncating...
+# tokens before: 178125 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 151 True longbook_qa_eng
+====== Example 152 ======
+Truncating...
+# tokens before: 178121 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 152 True longbook_qa_eng
+====== Example 153 ======
+Truncating...
+# tokens before: 178117 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 153 True longbook_qa_eng
+====== Example 154 ======
+Truncating...
+# tokens before: 178120 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 154 True longbook_qa_eng
+====== Example 155 ======
+Truncating...
+# tokens before: 178117 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 155 True longbook_qa_eng
+====== Example 156 ======
+Truncating...
+# tokens before: 266671 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 156 True longbook_qa_eng
+====== Example 157 ======
+Truncating...
+# tokens before: 266670 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 157 True longbook_qa_eng
+====== Example 158 ======
+Truncating...
+# tokens before: 266671 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 158 True longbook_qa_eng
+====== Example 159 ======
+Truncating...
+# tokens before: 266669 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 159 True longbook_qa_eng
+====== Example 160 ======
+Truncating...
+# tokens before: 266669 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 160 True longbook_qa_eng
+====== Example 161 ======
+Truncating...
+# tokens before: 94372 
+# tokens after: 94372
+cutinfo[idx>=0,is_cut,data_name]: 161 False longbook_qa_eng
+====== Example 162 ======
+Truncating...
+# tokens before: 94360 
+# tokens after: 94360
+cutinfo[idx>=0,is_cut,data_name]: 162 False longbook_qa_eng
+====== Example 163 ======
+Truncating...
+# tokens before: 94368 
+# tokens after: 94368
+cutinfo[idx>=0,is_cut,data_name]: 163 False longbook_qa_eng
+====== Example 164 ======
+Truncating...
+# tokens before: 94370 
+# tokens after: 94370
+cutinfo[idx>=0,is_cut,data_name]: 164 False longbook_qa_eng
+====== Example 165 ======
+Truncating...
+# tokens before: 94363 
+# tokens after: 94363
+cutinfo[idx>=0,is_cut,data_name]: 165 False longbook_qa_eng
+====== Example 166 ======
+Truncating...
+# tokens before: 452801 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 166 True longbook_qa_eng
+====== Example 167 ======
+Truncating...
+# tokens before: 452784 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 167 True longbook_qa_eng
+====== Example 168 ======
+Truncating...
+# tokens before: 452784 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 168 True longbook_qa_eng
+====== Example 169 ======
+Truncating...
+# tokens before: 452794 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 169 True longbook_qa_eng
+====== Example 170 ======
+Truncating...
+# tokens before: 452786 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 170 True longbook_qa_eng
+====== Example 171 ======
+Truncating...
+# tokens before: 134055 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 171 True longbook_qa_eng
+====== Example 172 ======
+Truncating...
+# tokens before: 134056 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 172 True longbook_qa_eng
+====== Example 173 ======
+Truncating...
+# tokens before: 134055 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 173 True longbook_qa_eng
+====== Example 174 ======
+Truncating...
+# tokens before: 134058 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 174 True longbook_qa_eng
+====== Example 175 ======
+Truncating...
+# tokens before: 134056 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 175 True longbook_qa_eng
+====== Example 176 ======
+Truncating...
+# tokens before: 163646 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 176 True longbook_qa_eng
+====== Example 177 ======
+Truncating...
+# tokens before: 163649 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 177 True longbook_qa_eng
+====== Example 178 ======
+Truncating...
+# tokens before: 163647 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 178 True longbook_qa_eng
+====== Example 179 ======
+Truncating...
+# tokens before: 163641 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 179 True longbook_qa_eng
+====== Example 180 ======
+Truncating...
+# tokens before: 163646 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 180 True longbook_qa_eng
+====== Example 181 ======
+Truncating...
+# tokens before: 194781 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 181 True longbook_qa_eng
+====== Example 182 ======
+Truncating...
+# tokens before: 194785 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 182 True longbook_qa_eng
+====== Example 183 ======
+Truncating...
+# tokens before: 194780 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 183 True longbook_qa_eng
+====== Example 184 ======
+Truncating...
+# tokens before: 194803 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 184 True longbook_qa_eng
+====== Example 185 ======
+Truncating...
+# tokens before: 194800 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 185 True longbook_qa_eng
+====== Example 186 ======
+Truncating...
+# tokens before: 261088 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 186 True longbook_qa_eng
+====== Example 187 ======
+Truncating...
+# tokens before: 261088 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 187 True longbook_qa_eng
+====== Example 188 ======
+Truncating...
+# tokens before: 261093 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 188 True longbook_qa_eng
+====== Example 189 ======
+Truncating...
+# tokens before: 261093 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 189 True longbook_qa_eng
+====== Example 190 ======
+Truncating...
+# tokens before: 261089 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 190 True longbook_qa_eng
+====== Example 191 ======
+Truncating...
+# tokens before: 100874 
+# tokens after: 100874
+cutinfo[idx>=0,is_cut,data_name]: 191 False longbook_qa_eng
+====== Example 192 ======
+Truncating...
+# tokens before: 100872 
+# tokens after: 100872
+cutinfo[idx>=0,is_cut,data_name]: 192 False longbook_qa_eng
+====== Example 193 ======
+Truncating...
+# tokens before: 100875 
+# tokens after: 100875
+cutinfo[idx>=0,is_cut,data_name]: 193 False longbook_qa_eng
+====== Example 194 ======
+Truncating...
+# tokens before: 100872 
+# tokens after: 100872
+cutinfo[idx>=0,is_cut,data_name]: 194 False longbook_qa_eng
+====== Example 195 ======
+Truncating...
+# tokens before: 100870 
+# tokens after: 100870
+cutinfo[idx>=0,is_cut,data_name]: 195 False longbook_qa_eng
+====== Example 196 ======
+Truncating...
+# tokens before: 189442 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 196 True longbook_qa_eng
+====== Example 197 ======
+Truncating...
+# tokens before: 189442 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 197 True longbook_qa_eng
+====== Example 198 ======
+Truncating...
+# tokens before: 189446 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 198 True longbook_qa_eng
+====== Example 199 ======
+Truncating...
+# tokens before: 189442 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 199 True longbook_qa_eng
+====== Example 200 ======
+Truncating...
+# tokens before: 189444 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 200 True longbook_qa_eng
+====== Example 201 ======
+Truncating...
+# tokens before: 148125 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 201 True longbook_qa_eng
+====== Example 202 ======
+Truncating...
+# tokens before: 148129 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 202 True longbook_qa_eng
+====== Example 203 ======
+Truncating...
+# tokens before: 148124 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 203 True longbook_qa_eng
+====== Example 204 ======
+Truncating...
+# tokens before: 148130 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 204 True longbook_qa_eng
+====== Example 205 ======
+Truncating...
+# tokens before: 148124 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 205 True longbook_qa_eng
+====== Example 206 ======
+Truncating...
+# tokens before: 177488 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 206 True longbook_qa_eng
+====== Example 207 ======
+Truncating...
+# tokens before: 177486 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 207 True longbook_qa_eng
+====== Example 208 ======
+Truncating...
+# tokens before: 177486 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 208 True longbook_qa_eng
+====== Example 209 ======
+Truncating...
+# tokens before: 177494 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 209 True longbook_qa_eng
+====== Example 210 ======
+Truncating...
+# tokens before: 177480 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 210 True longbook_qa_eng
+====== Example 211 ======
+Truncating...
+# tokens before: 92029 
+# tokens after: 92029
+cutinfo[idx>=0,is_cut,data_name]: 211 False longbook_qa_eng
+====== Example 212 ======
+Truncating...
+# tokens before: 92027 
+# tokens after: 92027
+cutinfo[idx>=0,is_cut,data_name]: 212 False longbook_qa_eng
+====== Example 213 ======
+Truncating...
+# tokens before: 92023 
+# tokens after: 92023
+cutinfo[idx>=0,is_cut,data_name]: 213 False longbook_qa_eng
+====== Example 214 ======
+Truncating...
+# tokens before: 92029 
+# tokens after: 92029
+cutinfo[idx>=0,is_cut,data_name]: 214 False longbook_qa_eng
+====== Example 215 ======
+Truncating...
+# tokens before: 92020 
+# tokens after: 92020
+cutinfo[idx>=0,is_cut,data_name]: 215 False longbook_qa_eng
+====== Example 216 ======
+Truncating...
+# tokens before: 232463 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 216 True longbook_qa_eng
+====== Example 217 ======
+Truncating...
+# tokens before: 232463 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 217 True longbook_qa_eng
+====== Example 218 ======
+Truncating...
+# tokens before: 232457 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 218 True longbook_qa_eng
+====== Example 219 ======
+Truncating...
+# tokens before: 232460 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 219 True longbook_qa_eng
+====== Example 220 ======
+Truncating...
+# tokens before: 232458 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 220 True longbook_qa_eng
+====== Example 221 ======
+Truncating...
+# tokens before: 69672 
+# tokens after: 69672
+cutinfo[idx>=0,is_cut,data_name]: 221 False longbook_qa_eng
+====== Example 222 ======
+Truncating...
+# tokens before: 69678 
+# tokens after: 69678
+cutinfo[idx>=0,is_cut,data_name]: 222 False longbook_qa_eng
+====== Example 223 ======
+Truncating...
+# tokens before: 69679 
+# tokens after: 69679
+cutinfo[idx>=0,is_cut,data_name]: 223 False longbook_qa_eng
+====== Example 224 ======
+Truncating...
+# tokens before: 69670 
+# tokens after: 69670
+cutinfo[idx>=0,is_cut,data_name]: 224 False longbook_qa_eng
+====== Example 225 ======
+Truncating...
+# tokens before: 69684 
+# tokens after: 69684
+cutinfo[idx>=0,is_cut,data_name]: 225 False longbook_qa_eng
+====== Example 226 ======
+Truncating...
+# tokens before: 213457 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 226 True longbook_qa_eng
+====== Example 227 ======
+Truncating...
+# tokens before: 213459 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 227 True longbook_qa_eng
+====== Example 228 ======
+Truncating...
+# tokens before: 213457 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 228 True longbook_qa_eng
+====== Example 229 ======
+Truncating...
+# tokens before: 213460 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 229 True longbook_qa_eng
+====== Example 230 ======
+Truncating...
+# tokens before: 213458 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 230 True longbook_qa_eng
+====== Example 231 ======
+Truncating...
+# tokens before: 188175 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 231 True longbook_qa_eng
+====== Example 232 ======
+Truncating...
+# tokens before: 188175 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 232 True longbook_qa_eng
+====== Example 233 ======
+Truncating...
+# tokens before: 188172 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 233 True longbook_qa_eng
+====== Example 234 ======
+Truncating...
+# tokens before: 188176 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 234 True longbook_qa_eng
+====== Example 235 ======
+Truncating...
+# tokens before: 188176 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 235 True longbook_qa_eng
+====== Example 236 ======
+Truncating...
+# tokens before: 126126 
+# tokens after: 126126
+cutinfo[idx>=0,is_cut,data_name]: 236 False longbook_qa_eng
+====== Example 237 ======
+Truncating...
+# tokens before: 126126 
+# tokens after: 126126
+cutinfo[idx>=0,is_cut,data_name]: 237 False longbook_qa_eng
+====== Example 238 ======
+Truncating...
+# tokens before: 126127 
+# tokens after: 126127
+cutinfo[idx>=0,is_cut,data_name]: 238 False longbook_qa_eng
+====== Example 239 ======
+Truncating...
+# tokens before: 126126 
+# tokens after: 126126
+cutinfo[idx>=0,is_cut,data_name]: 239 False longbook_qa_eng
+====== Example 240 ======
+Truncating...
+# tokens before: 126131 
+# tokens after: 126131
+cutinfo[idx>=0,is_cut,data_name]: 240 False longbook_qa_eng
+====== Example 241 ======
+Truncating...
+# tokens before: 145791 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 241 True longbook_qa_eng
+====== Example 242 ======
+Truncating...
+# tokens before: 145788 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 242 True longbook_qa_eng
+====== Example 243 ======
+Truncating...
+# tokens before: 145790 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 243 True longbook_qa_eng
+====== Example 244 ======
+Truncating...
+# tokens before: 145795 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 244 True longbook_qa_eng
+====== Example 245 ======
+Truncating...
+# tokens before: 145789 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 245 True longbook_qa_eng
+====== Example 246 ======
+Truncating...
+# tokens before: 101363 
+# tokens after: 101363
+cutinfo[idx>=0,is_cut,data_name]: 246 False longbook_qa_eng
+====== Example 247 ======
+Truncating...
+# tokens before: 101365 
+# tokens after: 101365
+cutinfo[idx>=0,is_cut,data_name]: 247 False longbook_qa_eng
+====== Example 248 ======
+Truncating...
+# tokens before: 101360 
+# tokens after: 101360
+cutinfo[idx>=0,is_cut,data_name]: 248 False longbook_qa_eng
+====== Example 249 ======
+Truncating...
+# tokens before: 101374 
+# tokens after: 101374
+cutinfo[idx>=0,is_cut,data_name]: 249 False longbook_qa_eng
+====== Example 250 ======
+Truncating...
+# tokens before: 101367 
+# tokens after: 101367
+cutinfo[idx>=0,is_cut,data_name]: 250 False longbook_qa_eng
+====== Example 251 ======
+Truncating...
+# tokens before: 199357 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 251 True longbook_qa_eng
+====== Example 252 ======
+Truncating...
+# tokens before: 199350 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 252 True longbook_qa_eng
+====== Example 253 ======
+Truncating...
+# tokens before: 199353 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 253 True longbook_qa_eng
+====== Example 254 ======
+Truncating...
+# tokens before: 199351 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 254 True longbook_qa_eng
+====== Example 255 ======
+Truncating...
+# tokens before: 199349 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 255 True longbook_qa_eng
+====== Example 256 ======
+Truncating...
+# tokens before: 79390 
+# tokens after: 79390
+cutinfo[idx>=0,is_cut,data_name]: 256 False longbook_qa_eng
+====== Example 257 ======
+Truncating...
+# tokens before: 79391 
+# tokens after: 79391
+cutinfo[idx>=0,is_cut,data_name]: 257 False longbook_qa_eng
+====== Example 258 ======
+Truncating...
+# tokens before: 79386 
+# tokens after: 79386
+cutinfo[idx>=0,is_cut,data_name]: 258 False longbook_qa_eng
+====== Example 259 ======
+Truncating...
+# tokens before: 79384 
+# tokens after: 79384
+cutinfo[idx>=0,is_cut,data_name]: 259 False longbook_qa_eng
+====== Example 260 ======
+Truncating...
+# tokens before: 79389 
+# tokens after: 79389
+cutinfo[idx>=0,is_cut,data_name]: 260 False longbook_qa_eng
+====== Example 261 ======
+Truncating...
+# tokens before: 183240 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 261 True longbook_qa_eng
+====== Example 262 ======
+Truncating...
+# tokens before: 183247 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 262 True longbook_qa_eng
+====== Example 263 ======
+Truncating...
+# tokens before: 183253 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 263 True longbook_qa_eng
+====== Example 264 ======
+Truncating...
+# tokens before: 183240 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 264 True longbook_qa_eng
+====== Example 265 ======
+Truncating...
+# tokens before: 183247 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 265 True longbook_qa_eng
+====== Example 266 ======
+Truncating...
+# tokens before: 104305 
+# tokens after: 104305
+cutinfo[idx>=0,is_cut,data_name]: 266 False longbook_qa_eng
+====== Example 267 ======
+Truncating...
+# tokens before: 104306 
+# tokens after: 104306
+cutinfo[idx>=0,is_cut,data_name]: 267 False longbook_qa_eng
+====== Example 268 ======
+Truncating...
+# tokens before: 104313 
+# tokens after: 104313
+cutinfo[idx>=0,is_cut,data_name]: 268 False longbook_qa_eng
+====== Example 269 ======
+Truncating...
+# tokens before: 104307 
+# tokens after: 104307
+cutinfo[idx>=0,is_cut,data_name]: 269 False longbook_qa_eng
+====== Example 270 ======
+Truncating...
+# tokens before: 104306 
+# tokens after: 104306
+cutinfo[idx>=0,is_cut,data_name]: 270 False longbook_qa_eng
+====== Example 271 ======
+Truncating...
+# tokens before: 90722 
+# tokens after: 90722
+cutinfo[idx>=0,is_cut,data_name]: 271 False longbook_qa_eng
+====== Example 272 ======
+Truncating...
+# tokens before: 90720 
+# tokens after: 90720
+cutinfo[idx>=0,is_cut,data_name]: 272 False longbook_qa_eng
+====== Example 273 ======
+Truncating...
+# tokens before: 90726 
+# tokens after: 90726
+cutinfo[idx>=0,is_cut,data_name]: 273 False longbook_qa_eng
+====== Example 274 ======
+Truncating...
+# tokens before: 90733 
+# tokens after: 90733
+cutinfo[idx>=0,is_cut,data_name]: 274 False longbook_qa_eng
+====== Example 275 ======
+Truncating...
+# tokens before: 90721 
+# tokens after: 90721
+cutinfo[idx>=0,is_cut,data_name]: 275 False longbook_qa_eng
+====== Example 276 ======
+Truncating...
+# tokens before: 279671 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 276 True longbook_qa_eng
+====== Example 277 ======
+Truncating...
+# tokens before: 279667 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 277 True longbook_qa_eng
+====== Example 278 ======
+Truncating...
+# tokens before: 279661 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 278 True longbook_qa_eng
+====== Example 279 ======
+Truncating...
+# tokens before: 279669 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 279 True longbook_qa_eng
+====== Example 280 ======
+Truncating...
+# tokens before: 279665 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 280 True longbook_qa_eng
+====== Example 281 ======
+Truncating...
+# tokens before: 148560 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 281 True longbook_qa_eng
+====== Example 282 ======
+Truncating...
+# tokens before: 148558 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 282 True longbook_qa_eng
+====== Example 283 ======
+Truncating...
+# tokens before: 148561 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 283 True longbook_qa_eng
+====== Example 284 ======
+Truncating...
+# tokens before: 148553 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 284 True longbook_qa_eng
+====== Example 285 ======
+Truncating...
+# tokens before: 148555 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 285 True longbook_qa_eng
+====== Example 286 ======
+Truncating...
+# tokens before: 155619 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 286 True longbook_qa_eng
+====== Example 287 ======
+Truncating...
+# tokens before: 155615 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 287 True longbook_qa_eng
+====== Example 288 ======
+Truncating...
+# tokens before: 155615 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 288 True longbook_qa_eng
+====== Example 289 ======
+Truncating...
+# tokens before: 155624 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 289 True longbook_qa_eng
+====== Example 290 ======
+Truncating...
+# tokens before: 155613 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 290 True longbook_qa_eng
+====== Example 291 ======
+Truncating...
+# tokens before: 282547 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 291 True longbook_qa_eng
+====== Example 292 ======
+Truncating...
+# tokens before: 282543 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 292 True longbook_qa_eng
+====== Example 293 ======
+Truncating...
+# tokens before: 282540 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 293 True longbook_qa_eng
+====== Example 294 ======
+Truncating...
+# tokens before: 282544 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 294 True longbook_qa_eng
+====== Example 295 ======
+Truncating...
+# tokens before: 282550 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 295 True longbook_qa_eng
+====== Example 296 ======
+Truncating...
+# tokens before: 180461 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 296 True longbook_qa_eng
+====== Example 297 ======
+Truncating...
+# tokens before: 180460 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 297 True longbook_qa_eng
+====== Example 298 ======
+Truncating...
+# tokens before: 180462 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 298 True longbook_qa_eng
+====== Example 299 ======
+Truncating...
+# tokens before: 180459 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 299 True longbook_qa_eng
+====== Example 300 ======
+Truncating...
+# tokens before: 180455 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 300 True longbook_qa_eng
+====== Example 301 ======
+Truncating...
+# tokens before: 75566 
+# tokens after: 75566
+cutinfo[idx>=0,is_cut,data_name]: 301 False longbook_qa_eng
+====== Example 302 ======
+Truncating...
+# tokens before: 75555 
+# tokens after: 75555
+cutinfo[idx>=0,is_cut,data_name]: 302 False longbook_qa_eng
+====== Example 303 ======
+Truncating...
+# tokens before: 75557 
+# tokens after: 75557
+cutinfo[idx>=0,is_cut,data_name]: 303 False longbook_qa_eng
+====== Example 304 ======
+Truncating...
+# tokens before: 75567 
+# tokens after: 75567
+cutinfo[idx>=0,is_cut,data_name]: 304 False longbook_qa_eng
+====== Example 305 ======
+Truncating...
+# tokens before: 75556 
+# tokens after: 75556
+cutinfo[idx>=0,is_cut,data_name]: 305 False longbook_qa_eng
+====== Example 306 ======
+Truncating...
+# tokens before: 119321 
+# tokens after: 119321
+cutinfo[idx>=0,is_cut,data_name]: 306 False longbook_qa_eng
+====== Example 307 ======
+Truncating...
+# tokens before: 119319 
+# tokens after: 119319
+cutinfo[idx>=0,is_cut,data_name]: 307 False longbook_qa_eng
+====== Example 308 ======
+Truncating...
+# tokens before: 119319 
+# tokens after: 119319
+cutinfo[idx>=0,is_cut,data_name]: 308 False longbook_qa_eng
+====== Example 309 ======
+Truncating...
+# tokens before: 119318 
+# tokens after: 119318
+cutinfo[idx>=0,is_cut,data_name]: 309 False longbook_qa_eng
+====== Example 310 ======
+Truncating...
+# tokens before: 119326 
+# tokens after: 119326
+cutinfo[idx>=0,is_cut,data_name]: 310 False longbook_qa_eng
+====== Example 311 ======
+Truncating...
+# tokens before: 72674 
+# tokens after: 72674
+cutinfo[idx>=0,is_cut,data_name]: 311 False longbook_qa_eng
+====== Example 312 ======
+Truncating...
+# tokens before: 72675 
+# tokens after: 72675
+cutinfo[idx>=0,is_cut,data_name]: 312 False longbook_qa_eng
+====== Example 313 ======
+Truncating...
+# tokens before: 72673 
+# tokens after: 72673
+cutinfo[idx>=0,is_cut,data_name]: 313 False longbook_qa_eng
+====== Example 314 ======
+Truncating...
+# tokens before: 72676 
+# tokens after: 72676
+cutinfo[idx>=0,is_cut,data_name]: 314 False longbook_qa_eng
+====== Example 315 ======
+Truncating...
+# tokens before: 72680 
+# tokens after: 72680
+cutinfo[idx>=0,is_cut,data_name]: 315 False longbook_qa_eng
+====== Example 316 ======
+Truncating...
+# tokens before: 95496 
+# tokens after: 95496
+cutinfo[idx>=0,is_cut,data_name]: 316 False longbook_qa_eng
+====== Example 317 ======
+Truncating...
+# tokens before: 95494 
+# tokens after: 95494
+cutinfo[idx>=0,is_cut,data_name]: 317 False longbook_qa_eng
+====== Example 318 ======
+Truncating...
+# tokens before: 95501 
+# tokens after: 95501
+cutinfo[idx>=0,is_cut,data_name]: 318 False longbook_qa_eng
+====== Example 319 ======
+Truncating...
+# tokens before: 95502 
+# tokens after: 95502
+cutinfo[idx>=0,is_cut,data_name]: 319 False longbook_qa_eng
+====== Example 320 ======
+Truncating...
+# tokens before: 95497 
+# tokens after: 95497
+cutinfo[idx>=0,is_cut,data_name]: 320 False longbook_qa_eng
+====== Example 321 ======
+Truncating...
+# tokens before: 201521 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 321 True longbook_qa_eng
+====== Example 322 ======
+Truncating...
+# tokens before: 201522 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 322 True longbook_qa_eng
+====== Example 323 ======
+Truncating...
+# tokens before: 201522 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 323 True longbook_qa_eng
+====== Example 324 ======
+Truncating...
+# tokens before: 201520 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 324 True longbook_qa_eng
+====== Example 325 ======
+Truncating...
+# tokens before: 201522 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 325 True longbook_qa_eng
+====== Example 326 ======
+Truncating...
+# tokens before: 88994 
+# tokens after: 88994
+cutinfo[idx>=0,is_cut,data_name]: 326 False longbook_qa_eng
+====== Example 327 ======
+Truncating...
+# tokens before: 88995 
+# tokens after: 88995
+cutinfo[idx>=0,is_cut,data_name]: 327 False longbook_qa_eng
+====== Example 328 ======
+Truncating...
+# tokens before: 88992 
+# tokens after: 88992
+cutinfo[idx>=0,is_cut,data_name]: 328 False longbook_qa_eng
+====== Example 329 ======
+Truncating...
+# tokens before: 88994 
+# tokens after: 88994
+cutinfo[idx>=0,is_cut,data_name]: 329 False longbook_qa_eng
+====== Example 330 ======
+Truncating...
+# tokens before: 88993 
+# tokens after: 88993
+cutinfo[idx>=0,is_cut,data_name]: 330 False longbook_qa_eng
+====== Example 331 ======
+Truncating...
+# tokens before: 223480 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 331 True longbook_qa_eng
+====== Example 332 ======
+Truncating...
+# tokens before: 223473 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 332 True longbook_qa_eng
+====== Example 333 ======
+Truncating...
+# tokens before: 223478 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 333 True longbook_qa_eng
+====== Example 334 ======
+Truncating...
+# tokens before: 223474 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 334 True longbook_qa_eng
+====== Example 335 ======
+Truncating...
+# tokens before: 223475 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 335 True longbook_qa_eng
+====== Example 336 ======
+Truncating...
+# tokens before: 127879 
+# tokens after: 127879
+cutinfo[idx>=0,is_cut,data_name]: 336 False longbook_qa_eng
+====== Example 337 ======
+Truncating...
+# tokens before: 127893 
+# tokens after: 127893
+cutinfo[idx>=0,is_cut,data_name]: 337 False longbook_qa_eng
+====== Example 338 ======
+Truncating...
+# tokens before: 127879 
+# tokens after: 127879
+cutinfo[idx>=0,is_cut,data_name]: 338 False longbook_qa_eng
+====== Example 339 ======
+Truncating...
+# tokens before: 127877 
+# tokens after: 127877
+cutinfo[idx>=0,is_cut,data_name]: 339 False longbook_qa_eng
+====== Example 340 ======
+Truncating...
+# tokens before: 127877 
+# tokens after: 127877
+cutinfo[idx>=0,is_cut,data_name]: 340 False longbook_qa_eng
+====== Example 341 ======
+Truncating...
+# tokens before: 81326 
+# tokens after: 81326
+cutinfo[idx>=0,is_cut,data_name]: 341 False longbook_qa_eng
+====== Example 342 ======
+Truncating...
+# tokens before: 81328 
+# tokens after: 81328
+cutinfo[idx>=0,is_cut,data_name]: 342 False longbook_qa_eng
+====== Example 343 ======
+Truncating...
+# tokens before: 81323 
+# tokens after: 81323
+cutinfo[idx>=0,is_cut,data_name]: 343 False longbook_qa_eng
+====== Example 344 ======
+Truncating...
+# tokens before: 81330 
+# tokens after: 81330
+cutinfo[idx>=0,is_cut,data_name]: 344 False longbook_qa_eng
+====== Example 345 ======
+Truncating...
+# tokens before: 81325 
+# tokens after: 81325
+cutinfo[idx>=0,is_cut,data_name]: 345 False longbook_qa_eng
+====== Example 346 ======
+Truncating...
+# tokens before: 301186 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 346 True longbook_qa_eng
+====== Example 347 ======
+Truncating...
+# tokens before: 301187 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 347 True longbook_qa_eng
+====== Example 348 ======
+Truncating...
+# tokens before: 301187 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 348 True longbook_qa_eng
+====== Example 349 ======
+Truncating...
+# tokens before: 301191 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 349 True longbook_qa_eng
+====== Example 350 ======
+Truncating...
+# tokens before: 301184 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 350 True longbook_qa_eng
+done.final_display:[avg_same;num_same;avg_cut;num_cut]: 97023.54237288136 118 131022.0 233
+longbook_choice_eng
+/usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+{
+    "task": "longbook_choice_eng",
+    "data_dir": "../data",
+    "output_dir": "../prompts-debug-2subsets/",
+    "model_path": "Qwen/Qwen2-72B-Instruct",
+    "model_name": "gpt4",
+    "start_idx": 0,
+    "stop_idx": null,
+    "verbose": false,
+    "device": "cuda",
+    "pxout_txt": null,
+    "pxref_json": null,
+    "pxout_ref_json": null,
+    "cache_dir": "/workspace/asr/megatron.20240606/qwen",
+    "use_zero_scrolls": false,
+    "sep_by_assistant": false
+}
+==== Evaluation ====
+# examples: 229
+Start index: 0
+Stop index: 229
+Verbose: False
+Max tokens: 40
+====== Example 0 ======
+Truncating...
+# tokens before: 266731 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 0 True longbook_choice_eng
+====== Example 1 ======
+Truncating...
+# tokens before: 266723 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 1 True longbook_choice_eng
+====== Example 2 ======
+Truncating...
+# tokens before: 266731 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 2 True longbook_choice_eng
+====== Example 3 ======
+Truncating...
+# tokens before: 266713 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 3 True longbook_choice_eng
+====== Example 4 ======
+Truncating...
+# tokens before: 94449 
+# tokens after: 94449
+cutinfo[idx>=0,is_cut,data_name]: 4 False longbook_choice_eng
+====== Example 5 ======
+Truncating...
+# tokens before: 94418 
+# tokens after: 94418
+cutinfo[idx>=0,is_cut,data_name]: 5 False longbook_choice_eng
+====== Example 6 ======
+Truncating...
+# tokens before: 94414 
+# tokens after: 94414
+cutinfo[idx>=0,is_cut,data_name]: 6 False longbook_choice_eng
+====== Example 7 ======
+Truncating...
+# tokens before: 94421 
+# tokens after: 94421
+cutinfo[idx>=0,is_cut,data_name]: 7 False longbook_choice_eng
+====== Example 8 ======
+Truncating...
+# tokens before: 452845 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 8 True longbook_choice_eng
+====== Example 9 ======
+Truncating...
+# tokens before: 452836 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 9 True longbook_choice_eng
+====== Example 10 ======
+Truncating...
+# tokens before: 452858 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 10 True longbook_choice_eng
+====== Example 11 ======
+Truncating...
+# tokens before: 452849 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 11 True longbook_choice_eng
+====== Example 12 ======
+Truncating...
+# tokens before: 134108 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 12 True longbook_choice_eng
+====== Example 13 ======
+Truncating...
+# tokens before: 134103 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 13 True longbook_choice_eng
+====== Example 14 ======
+Truncating...
+# tokens before: 134135 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 14 True longbook_choice_eng
+====== Example 15 ======
+Truncating...
+# tokens before: 134122 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 15 True longbook_choice_eng
+====== Example 16 ======
+Truncating...
+# tokens before: 163702 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 16 True longbook_choice_eng
+====== Example 17 ======
+Truncating...
+# tokens before: 163789 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 17 True longbook_choice_eng
+====== Example 18 ======
+Truncating...
+# tokens before: 163727 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 18 True longbook_choice_eng
+====== Example 19 ======
+Truncating...
+# tokens before: 163723 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 19 True longbook_choice_eng
+====== Example 20 ======
+Truncating...
+# tokens before: 156153 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 20 True longbook_choice_eng
+====== Example 21 ======
+Truncating...
+# tokens before: 156164 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 21 True longbook_choice_eng
+====== Example 22 ======
+Truncating...
+# tokens before: 156167 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 22 True longbook_choice_eng
+====== Example 23 ======
+Truncating...
+# tokens before: 156179 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 23 True longbook_choice_eng
+====== Example 24 ======
+Truncating...
+# tokens before: 264223 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 24 True longbook_choice_eng
+====== Example 25 ======
+Truncating...
+# tokens before: 264195 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 25 True longbook_choice_eng
+====== Example 26 ======
+Truncating...
+# tokens before: 264185 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 26 True longbook_choice_eng
+====== Example 27 ======
+Truncating...
+# tokens before: 264214 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 27 True longbook_choice_eng
+====== Example 28 ======
+Truncating...
+# tokens before: 201593 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 28 True longbook_choice_eng
+====== Example 29 ======
+Truncating...
+# tokens before: 201574 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 29 True longbook_choice_eng
+====== Example 30 ======
+Truncating...
+# tokens before: 201569 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 30 True longbook_choice_eng
+====== Example 31 ======
+Truncating...
+# tokens before: 201580 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 31 True longbook_choice_eng
+====== Example 32 ======
+Truncating...
+# tokens before: 90594 
+# tokens after: 90594
+cutinfo[idx>=0,is_cut,data_name]: 32 False longbook_choice_eng
+====== Example 33 ======
+Truncating...
+# tokens before: 90566 
+# tokens after: 90566
+cutinfo[idx>=0,is_cut,data_name]: 33 False longbook_choice_eng
+====== Example 34 ======
+Truncating...
+# tokens before: 90585 
+# tokens after: 90585
+cutinfo[idx>=0,is_cut,data_name]: 34 False longbook_choice_eng
+====== Example 35 ======
+Truncating...
+# tokens before: 90584 
+# tokens after: 90584
+cutinfo[idx>=0,is_cut,data_name]: 35 False longbook_choice_eng
+====== Example 36 ======
+Truncating...
+# tokens before: 255610 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 36 True longbook_choice_eng
+====== Example 37 ======
+Truncating...
+# tokens before: 255598 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 37 True longbook_choice_eng
+====== Example 38 ======
+Truncating...
+# tokens before: 255594 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 38 True longbook_choice_eng
+====== Example 39 ======
+Truncating...
+# tokens before: 255593 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 39 True longbook_choice_eng
+====== Example 40 ======
+Truncating...
+# tokens before: 119368 
+# tokens after: 119368
+cutinfo[idx>=0,is_cut,data_name]: 40 False longbook_choice_eng
+====== Example 41 ======
+Truncating...
+# tokens before: 119369 
+# tokens after: 119369
+cutinfo[idx>=0,is_cut,data_name]: 41 False longbook_choice_eng
+====== Example 42 ======
+Truncating...
+# tokens before: 119377 
+# tokens after: 119377
+cutinfo[idx>=0,is_cut,data_name]: 42 False longbook_choice_eng
+====== Example 43 ======
+Truncating...
+# tokens before: 119385 
+# tokens after: 119385
+cutinfo[idx>=0,is_cut,data_name]: 43 False longbook_choice_eng
+====== Example 44 ======
+Truncating...
+# tokens before: 72729 
+# tokens after: 72729
+cutinfo[idx>=0,is_cut,data_name]: 44 False longbook_choice_eng
+====== Example 45 ======
+Truncating...
+# tokens before: 72725 
+# tokens after: 72725
+cutinfo[idx>=0,is_cut,data_name]: 45 False longbook_choice_eng
+====== Example 46 ======
+Truncating...
+# tokens before: 72735 
+# tokens after: 72735
+cutinfo[idx>=0,is_cut,data_name]: 46 False longbook_choice_eng
+====== Example 47 ======
+Truncating...
+# tokens before: 72725 
+# tokens after: 72725
+cutinfo[idx>=0,is_cut,data_name]: 47 False longbook_choice_eng
+====== Example 48 ======
+Truncating...
+# tokens before: 126189 
+# tokens after: 126189
+cutinfo[idx>=0,is_cut,data_name]: 48 False longbook_choice_eng
+====== Example 49 ======
+Truncating...
+# tokens before: 126189 
+# tokens after: 126189
+cutinfo[idx>=0,is_cut,data_name]: 49 False longbook_choice_eng
+====== Example 50 ======
+Truncating...
+# tokens before: 126173 
+# tokens after: 126173
+cutinfo[idx>=0,is_cut,data_name]: 50 False longbook_choice_eng
+====== Example 51 ======
+Truncating...
+# tokens before: 126177 
+# tokens after: 126177
+cutinfo[idx>=0,is_cut,data_name]: 51 False longbook_choice_eng
+====== Example 52 ======
+Truncating...
+# tokens before: 232511 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 52 True longbook_choice_eng
+====== Example 53 ======
+Truncating...
+# tokens before: 232516 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 53 True longbook_choice_eng
+====== Example 54 ======
+Truncating...
+# tokens before: 232511 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 54 True longbook_choice_eng
+====== Example 55 ======
+Truncating...
+# tokens before: 232506 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 55 True longbook_choice_eng
+====== Example 56 ======
+Truncating...
+# tokens before: 223574 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 56 True longbook_choice_eng
+====== Example 57 ======
+Truncating...
+# tokens before: 223522 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 57 True longbook_choice_eng
+====== Example 58 ======
+Truncating...
+# tokens before: 223521 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 58 True longbook_choice_eng
+====== Example 59 ======
+Truncating...
+# tokens before: 223536 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 59 True longbook_choice_eng
+====== Example 60 ======
+Truncating...
+# tokens before: 178203 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 60 True longbook_choice_eng
+====== Example 61 ======
+Truncating...
+# tokens before: 178183 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 61 True longbook_choice_eng
+====== Example 62 ======
+Truncating...
+# tokens before: 178239 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 62 True longbook_choice_eng
+====== Example 63 ======
+Truncating...
+# tokens before: 178161 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 63 True longbook_choice_eng
+====== Example 64 ======
+Truncating...
+# tokens before: 101409 
+# tokens after: 101409
+cutinfo[idx>=0,is_cut,data_name]: 64 False longbook_choice_eng
+====== Example 65 ======
+Truncating...
+# tokens before: 101417 
+# tokens after: 101417
+cutinfo[idx>=0,is_cut,data_name]: 65 False longbook_choice_eng
+====== Example 66 ======
+Truncating...
+# tokens before: 101430 
+# tokens after: 101430
+cutinfo[idx>=0,is_cut,data_name]: 66 False longbook_choice_eng
+====== Example 67 ======
+Truncating...
+# tokens before: 101422 
+# tokens after: 101422
+cutinfo[idx>=0,is_cut,data_name]: 67 False longbook_choice_eng
+====== Example 68 ======
+Truncating...
+# tokens before: 183293 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 68 True longbook_choice_eng
+====== Example 69 ======
+Truncating...
+# tokens before: 183283 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 69 True longbook_choice_eng
+====== Example 70 ======
+Truncating...
+# tokens before: 183292 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 70 True longbook_choice_eng
+====== Example 71 ======
+Truncating...
+# tokens before: 183300 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 71 True longbook_choice_eng
+====== Example 72 ======
+Truncating...
+# tokens before: 744718 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 72 True longbook_choice_eng
+====== Example 73 ======
+Truncating...
+# tokens before: 744721 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 73 True longbook_choice_eng
+====== Example 74 ======
+Truncating...
+# tokens before: 744711 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 74 True longbook_choice_eng
+====== Example 75 ======
+Truncating...
+# tokens before: 744716 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 75 True longbook_choice_eng
+====== Example 76 ======
+Truncating...
+# tokens before: 245039 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 76 True longbook_choice_eng
+====== Example 77 ======
+Truncating...
+# tokens before: 245037 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 77 True longbook_choice_eng
+====== Example 78 ======
+Truncating...
+# tokens before: 245022 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 78 True longbook_choice_eng
+====== Example 79 ======
+Truncating...
+# tokens before: 245030 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 79 True longbook_choice_eng
+====== Example 80 ======
+Truncating...
+# tokens before: 92073 
+# tokens after: 92073
+cutinfo[idx>=0,is_cut,data_name]: 80 False longbook_choice_eng
+====== Example 81 ======
+Truncating...
+# tokens before: 92089 
+# tokens after: 92089
+cutinfo[idx>=0,is_cut,data_name]: 81 False longbook_choice_eng
+====== Example 82 ======
+Truncating...
+# tokens before: 92102 
+# tokens after: 92102
+cutinfo[idx>=0,is_cut,data_name]: 82 False longbook_choice_eng
+====== Example 83 ======
+Truncating...
+# tokens before: 92098 
+# tokens after: 92098
+cutinfo[idx>=0,is_cut,data_name]: 83 False longbook_choice_eng
+====== Example 84 ======
+Truncating...
+# tokens before: 148189 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 84 True longbook_choice_eng
+====== Example 85 ======
+Truncating...
+# tokens before: 148180 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 85 True longbook_choice_eng
+====== Example 86 ======
+Truncating...
+# tokens before: 148179 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 86 True longbook_choice_eng
+====== Example 87 ======
+Truncating...
+# tokens before: 148201 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 87 True longbook_choice_eng
+====== Example 88 ======
+Truncating...
+# tokens before: 213510 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 88 True longbook_choice_eng
+====== Example 89 ======
+Truncating...
+# tokens before: 213514 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 89 True longbook_choice_eng
+====== Example 90 ======
+Truncating...
+# tokens before: 213501 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 90 True longbook_choice_eng
+====== Example 91 ======
+Truncating...
+# tokens before: 213508 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 91 True longbook_choice_eng
+====== Example 92 ======
+Truncating...
+# tokens before: 199396 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 92 True longbook_choice_eng
+====== Example 93 ======
+Truncating...
+# tokens before: 199401 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 93 True longbook_choice_eng
+====== Example 94 ======
+Truncating...
+# tokens before: 199400 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 94 True longbook_choice_eng
+====== Example 95 ======
+Truncating...
+# tokens before: 199396 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 95 True longbook_choice_eng
+====== Example 96 ======
+Truncating...
+# tokens before: 265690 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 96 True longbook_choice_eng
+====== Example 97 ======
+Truncating...
+# tokens before: 265701 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 97 True longbook_choice_eng
+====== Example 98 ======
+Truncating...
+# tokens before: 265697 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 98 True longbook_choice_eng
+====== Example 99 ======
+Truncating...
+# tokens before: 265700 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 99 True longbook_choice_eng
+====== Example 100 ======
+Truncating...
+# tokens before: 261155 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 100 True longbook_choice_eng
+====== Example 101 ======
+Truncating...
+# tokens before: 261154 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 101 True longbook_choice_eng
+====== Example 102 ======
+Truncating...
+# tokens before: 261170 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 102 True longbook_choice_eng
+====== Example 103 ======
+Truncating...
+# tokens before: 261151 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 103 True longbook_choice_eng
+====== Example 104 ======
+Truncating...
+# tokens before: 95559 
+# tokens after: 95559
+cutinfo[idx>=0,is_cut,data_name]: 104 False longbook_choice_eng
+====== Example 105 ======
+Truncating...
+# tokens before: 95546 
+# tokens after: 95546
+cutinfo[idx>=0,is_cut,data_name]: 105 False longbook_choice_eng
+====== Example 106 ======
+Truncating...
+# tokens before: 95549 
+# tokens after: 95549
+cutinfo[idx>=0,is_cut,data_name]: 106 False longbook_choice_eng
+====== Example 107 ======
+Truncating...
+# tokens before: 95552 
+# tokens after: 95552
+cutinfo[idx>=0,is_cut,data_name]: 107 False longbook_choice_eng
+====== Example 108 ======
+Truncating...
+# tokens before: 69729 
+# tokens after: 69729
+cutinfo[idx>=0,is_cut,data_name]: 108 False longbook_choice_eng
+====== Example 109 ======
+Truncating...
+# tokens before: 69725 
+# tokens after: 69725
+cutinfo[idx>=0,is_cut,data_name]: 109 False longbook_choice_eng
+====== Example 110 ======
+Truncating...
+# tokens before: 69738 
+# tokens after: 69738
+cutinfo[idx>=0,is_cut,data_name]: 110 False longbook_choice_eng
+====== Example 111 ======
+Truncating...
+# tokens before: 69727 
+# tokens after: 69727
+cutinfo[idx>=0,is_cut,data_name]: 111 False longbook_choice_eng
+====== Example 112 ======
+Truncating...
+# tokens before: 213837 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 112 True longbook_choice_eng
+====== Example 113 ======
+Truncating...
+# tokens before: 213838 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 113 True longbook_choice_eng
+====== Example 114 ======
+Truncating...
+# tokens before: 213858 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 114 True longbook_choice_eng
+====== Example 115 ======
+Truncating...
+# tokens before: 213872 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 115 True longbook_choice_eng
+====== Example 116 ======
+Truncating...
+# tokens before: 104361 
+# tokens after: 104361
+cutinfo[idx>=0,is_cut,data_name]: 116 False longbook_choice_eng
+====== Example 117 ======
+Truncating...
+# tokens before: 104356 
+# tokens after: 104356
+cutinfo[idx>=0,is_cut,data_name]: 117 False longbook_choice_eng
+====== Example 118 ======
+Truncating...
+# tokens before: 104396 
+# tokens after: 104396
+cutinfo[idx>=0,is_cut,data_name]: 118 False longbook_choice_eng
+====== Example 119 ======
+Truncating...
+# tokens before: 104358 
+# tokens after: 104358
+cutinfo[idx>=0,is_cut,data_name]: 119 False longbook_choice_eng
+====== Example 120 ======
+Truncating...
+# tokens before: 282595 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 120 True longbook_choice_eng
+====== Example 121 ======
+Truncating...
+# tokens before: 282617 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 121 True longbook_choice_eng
+====== Example 122 ======
+Truncating...
+# tokens before: 282604 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 122 True longbook_choice_eng
+====== Example 123 ======
+Truncating...
+# tokens before: 282597 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 123 True longbook_choice_eng
+====== Example 124 ======
+Truncating...
+# tokens before: 142905 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 124 True longbook_choice_eng
+====== Example 125 ======
+Truncating...
+# tokens before: 142917 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 125 True longbook_choice_eng
+====== Example 126 ======
+Truncating...
+# tokens before: 142943 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 126 True longbook_choice_eng
+====== Example 127 ======
+Truncating...
+# tokens before: 142902 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 127 True longbook_choice_eng
+====== Example 128 ======
+Truncating...
+# tokens before: 180516 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 128 True longbook_choice_eng
+====== Example 129 ======
+Truncating...
+# tokens before: 180518 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 129 True longbook_choice_eng
+====== Example 130 ======
+Truncating...
+# tokens before: 180508 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 130 True longbook_choice_eng
+====== Example 131 ======
+Truncating...
+# tokens before: 180513 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 131 True longbook_choice_eng
+====== Example 132 ======
+Truncating...
+# tokens before: 144101 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 132 True longbook_choice_eng
+====== Example 133 ======
+Truncating...
+# tokens before: 144109 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 133 True longbook_choice_eng
+====== Example 134 ======
+Truncating...
+# tokens before: 144098 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 134 True longbook_choice_eng
+====== Example 135 ======
+Truncating...
+# tokens before: 144095 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 135 True longbook_choice_eng
+====== Example 136 ======
+Truncating...
+# tokens before: 90786 
+# tokens after: 90786
+cutinfo[idx>=0,is_cut,data_name]: 136 False longbook_choice_eng
+====== Example 137 ======
+Truncating...
+# tokens before: 90787 
+# tokens after: 90787
+cutinfo[idx>=0,is_cut,data_name]: 137 False longbook_choice_eng
+====== Example 138 ======
+Truncating...
+# tokens before: 90782 
+# tokens after: 90782
+cutinfo[idx>=0,is_cut,data_name]: 138 False longbook_choice_eng
+====== Example 139 ======
+Truncating...
+# tokens before: 148609 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 139 True longbook_choice_eng
+====== Example 140 ======
+Truncating...
+# tokens before: 148610 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 140 True longbook_choice_eng
+====== Example 141 ======
+Truncating...
+# tokens before: 148622 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 141 True longbook_choice_eng
+====== Example 142 ======
+Truncating...
+# tokens before: 148611 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 142 True longbook_choice_eng
+====== Example 143 ======
+Truncating...
+# tokens before: 89758 
+# tokens after: 89758
+cutinfo[idx>=0,is_cut,data_name]: 143 False longbook_choice_eng
+====== Example 144 ======
+Truncating...
+# tokens before: 89748 
+# tokens after: 89748
+cutinfo[idx>=0,is_cut,data_name]: 144 False longbook_choice_eng
+====== Example 145 ======
+Truncating...
+# tokens before: 89764 
+# tokens after: 89764
+cutinfo[idx>=0,is_cut,data_name]: 145 False longbook_choice_eng
+====== Example 146 ======
+Truncating...
+# tokens before: 89778 
+# tokens after: 89778
+cutinfo[idx>=0,is_cut,data_name]: 146 False longbook_choice_eng
+====== Example 147 ======
+Truncating...
+# tokens before: 177543 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 147 True longbook_choice_eng
+====== Example 148 ======
+Truncating...
+# tokens before: 177536 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 148 True longbook_choice_eng
+====== Example 149 ======
+Truncating...
+# tokens before: 134585 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 149 True longbook_choice_eng
+====== Example 150 ======
+Truncating...
+# tokens before: 134591 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 150 True longbook_choice_eng
+====== Example 151 ======
+Truncating...
+# tokens before: 134594 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 151 True longbook_choice_eng
+====== Example 152 ======
+Truncating...
+# tokens before: 134594 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 152 True longbook_choice_eng
+====== Example 153 ======
+Truncating...
+# tokens before: 88039 
+# tokens after: 88039
+cutinfo[idx>=0,is_cut,data_name]: 153 False longbook_choice_eng
+====== Example 154 ======
+Truncating...
+# tokens before: 88031 
+# tokens after: 88031
+cutinfo[idx>=0,is_cut,data_name]: 154 False longbook_choice_eng
+====== Example 155 ======
+Truncating...
+# tokens before: 88034 
+# tokens after: 88034
+cutinfo[idx>=0,is_cut,data_name]: 155 False longbook_choice_eng
+====== Example 156 ======
+Truncating...
+# tokens before: 88039 
+# tokens after: 88039
+cutinfo[idx>=0,is_cut,data_name]: 156 False longbook_choice_eng
+====== Example 157 ======
+Truncating...
+# tokens before: 89050 
+# tokens after: 89050
+cutinfo[idx>=0,is_cut,data_name]: 157 False longbook_choice_eng
+====== Example 158 ======
+Truncating...
+# tokens before: 89049 
+# tokens after: 89049
+cutinfo[idx>=0,is_cut,data_name]: 158 False longbook_choice_eng
+====== Example 159 ======
+Truncating...
+# tokens before: 89070 
+# tokens after: 89070
+cutinfo[idx>=0,is_cut,data_name]: 159 False longbook_choice_eng
+====== Example 160 ======
+Truncating...
+# tokens before: 89043 
+# tokens after: 89043
+cutinfo[idx>=0,is_cut,data_name]: 160 False longbook_choice_eng
+====== Example 161 ======
+Truncating...
+# tokens before: 127950 
+# tokens after: 127950
+cutinfo[idx>=0,is_cut,data_name]: 161 False longbook_choice_eng
+====== Example 162 ======
+Truncating...
+# tokens before: 127950 
+# tokens after: 127950
+cutinfo[idx>=0,is_cut,data_name]: 162 False longbook_choice_eng
+====== Example 163 ======
+Truncating...
+# tokens before: 127923 
+# tokens after: 127923
+cutinfo[idx>=0,is_cut,data_name]: 163 False longbook_choice_eng
+====== Example 164 ======
+Truncating...
+# tokens before: 127936 
+# tokens after: 127936
+cutinfo[idx>=0,is_cut,data_name]: 164 False longbook_choice_eng
+====== Example 165 ======
+Truncating...
+# tokens before: 384972 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 165 True longbook_choice_eng
+====== Example 166 ======
+Truncating...
+# tokens before: 384975 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 166 True longbook_choice_eng
+====== Example 167 ======
+Truncating...
+# tokens before: 384967 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 167 True longbook_choice_eng
+====== Example 168 ======
+Truncating...
+# tokens before: 384967 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 168 True longbook_choice_eng
+====== Example 169 ======
+Truncating...
+# tokens before: 142739 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 169 True longbook_choice_eng
+====== Example 170 ======
+Truncating...
+# tokens before: 142748 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 170 True longbook_choice_eng
+====== Example 171 ======
+Truncating...
+# tokens before: 142721 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 171 True longbook_choice_eng
+====== Example 172 ======
+Truncating...
+# tokens before: 142758 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 172 True longbook_choice_eng
+====== Example 173 ======
+Truncating...
+# tokens before: 308704 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 173 True longbook_choice_eng
+====== Example 174 ======
+Truncating...
+# tokens before: 308714 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 174 True longbook_choice_eng
+====== Example 175 ======
+Truncating...
+# tokens before: 308690 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 175 True longbook_choice_eng
+====== Example 176 ======
+Truncating...
+# tokens before: 308694 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 176 True longbook_choice_eng
+====== Example 177 ======
+Truncating...
+# tokens before: 480619 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 177 True longbook_choice_eng
+====== Example 178 ======
+Truncating...
+# tokens before: 480612 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 178 True longbook_choice_eng
+====== Example 179 ======
+Truncating...
+# tokens before: 480611 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 179 True longbook_choice_eng
+====== Example 180 ======
+Truncating...
+# tokens before: 480606 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 180 True longbook_choice_eng
+====== Example 181 ======
+Truncating...
+# tokens before: 87994 
+# tokens after: 87994
+cutinfo[idx>=0,is_cut,data_name]: 181 False longbook_choice_eng
+====== Example 182 ======
+Truncating...
+# tokens before: 88015 
+# tokens after: 88015
+cutinfo[idx>=0,is_cut,data_name]: 182 False longbook_choice_eng
+====== Example 183 ======
+Truncating...
+# tokens before: 87995 
+# tokens after: 87995
+cutinfo[idx>=0,is_cut,data_name]: 183 False longbook_choice_eng
+====== Example 184 ======
+Truncating...
+# tokens before: 88010 
+# tokens after: 88010
+cutinfo[idx>=0,is_cut,data_name]: 184 False longbook_choice_eng
+====== Example 185 ======
+Truncating...
+# tokens before: 90664 
+# tokens after: 90664
+cutinfo[idx>=0,is_cut,data_name]: 185 False longbook_choice_eng
+====== Example 186 ======
+Truncating...
+# tokens before: 90665 
+# tokens after: 90665
+cutinfo[idx>=0,is_cut,data_name]: 186 False longbook_choice_eng
+====== Example 187 ======
+Truncating...
+# tokens before: 90666 
+# tokens after: 90666
+cutinfo[idx>=0,is_cut,data_name]: 187 False longbook_choice_eng
+====== Example 188 ======
+Truncating...
+# tokens before: 90658 
+# tokens after: 90658
+cutinfo[idx>=0,is_cut,data_name]: 188 False longbook_choice_eng
+====== Example 189 ======
+Truncating...
+# tokens before: 101739 
+# tokens after: 101739
+cutinfo[idx>=0,is_cut,data_name]: 189 False longbook_choice_eng
+====== Example 190 ======
+Truncating...
+# tokens before: 101701 
+# tokens after: 101701
+cutinfo[idx>=0,is_cut,data_name]: 190 False longbook_choice_eng
+====== Example 191 ======
+Truncating...
+# tokens before: 101687 
+# tokens after: 101687
+cutinfo[idx>=0,is_cut,data_name]: 191 False longbook_choice_eng
+====== Example 192 ======
+Truncating...
+# tokens before: 101711 
+# tokens after: 101711
+cutinfo[idx>=0,is_cut,data_name]: 192 False longbook_choice_eng
+====== Example 193 ======
+Truncating...
+# tokens before: 223163 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 193 True longbook_choice_eng
+====== Example 194 ======
+Truncating...
+# tokens before: 223144 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 194 True longbook_choice_eng
+====== Example 195 ======
+Truncating...
+# tokens before: 223115 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 195 True longbook_choice_eng
+====== Example 196 ======
+Truncating...
+# tokens before: 223126 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 196 True longbook_choice_eng
+====== Example 197 ======
+Truncating...
+# tokens before: 116913 
+# tokens after: 116913
+cutinfo[idx>=0,is_cut,data_name]: 197 False longbook_choice_eng
+====== Example 198 ======
+Truncating...
+# tokens before: 116898 
+# tokens after: 116898
+cutinfo[idx>=0,is_cut,data_name]: 198 False longbook_choice_eng
+====== Example 199 ======
+Truncating...
+# tokens before: 116912 
+# tokens after: 116912
+cutinfo[idx>=0,is_cut,data_name]: 199 False longbook_choice_eng
+====== Example 200 ======
+Truncating...
+# tokens before: 116904 
+# tokens after: 116904
+cutinfo[idx>=0,is_cut,data_name]: 200 False longbook_choice_eng
+====== Example 201 ======
+Truncating...
+# tokens before: 149548 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 201 True longbook_choice_eng
+====== Example 202 ======
+Truncating...
+# tokens before: 149550 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 202 True longbook_choice_eng
+====== Example 203 ======
+Truncating...
+# tokens before: 149557 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 203 True longbook_choice_eng
+====== Example 204 ======
+Truncating...
+# tokens before: 149563 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 204 True longbook_choice_eng
+====== Example 205 ======
+Truncating...
+# tokens before: 333445 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 205 True longbook_choice_eng
+====== Example 206 ======
+Truncating...
+# tokens before: 333445 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 206 True longbook_choice_eng
+====== Example 207 ======
+Truncating...
+# tokens before: 333430 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 207 True longbook_choice_eng
+====== Example 208 ======
+Truncating...
+# tokens before: 333406 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 208 True longbook_choice_eng
+====== Example 209 ======
+Truncating...
+# tokens before: 158553 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 209 True longbook_choice_eng
+====== Example 210 ======
+Truncating...
+# tokens before: 158557 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 210 True longbook_choice_eng
+====== Example 211 ======
+Truncating...
+# tokens before: 158549 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 211 True longbook_choice_eng
+====== Example 212 ======
+Truncating...
+# tokens before: 158581 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 212 True longbook_choice_eng
+====== Example 213 ======
+Truncating...
+# tokens before: 299616 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 213 True longbook_choice_eng
+====== Example 214 ======
+Truncating...
+# tokens before: 299601 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 214 True longbook_choice_eng
+====== Example 215 ======
+Truncating...
+# tokens before: 299602 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 215 True longbook_choice_eng
+====== Example 216 ======
+Truncating...
+# tokens before: 299598 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 216 True longbook_choice_eng
+====== Example 217 ======
+Truncating...
+# tokens before: 131835 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 217 True longbook_choice_eng
+====== Example 218 ======
+Truncating...
+# tokens before: 131840 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 218 True longbook_choice_eng
+====== Example 219 ======
+Truncating...
+# tokens before: 131823 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 219 True longbook_choice_eng
+====== Example 220 ======
+Truncating...
+# tokens before: 131825 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 220 True longbook_choice_eng
+====== Example 221 ======
+Truncating...
+# tokens before: 108410 
+# tokens after: 108410
+cutinfo[idx>=0,is_cut,data_name]: 221 False longbook_choice_eng
+====== Example 222 ======
+Truncating...
+# tokens before: 108430 
+# tokens after: 108430
+cutinfo[idx>=0,is_cut,data_name]: 222 False longbook_choice_eng
+====== Example 223 ======
+Truncating...
+# tokens before: 108416 
+# tokens after: 108416
+cutinfo[idx>=0,is_cut,data_name]: 223 False longbook_choice_eng
+====== Example 224 ======
+Truncating...
+# tokens before: 108411 
+# tokens after: 108411
+cutinfo[idx>=0,is_cut,data_name]: 224 False longbook_choice_eng
+====== Example 225 ======
+Truncating...
+# tokens before: 142432 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 225 True longbook_choice_eng
+====== Example 226 ======
+Truncating...
+# tokens before: 142439 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 226 True longbook_choice_eng
+====== Example 227 ======
+Truncating...
+# tokens before: 142438 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 227 True longbook_choice_eng
+====== Example 228 ======
+Truncating...
+# tokens before: 142444 
+# tokens after: 131022
+cutinfo[idx>=0,is_cut,data_name]: 228 True longbook_choice_eng
+done.final_display:[avg_same;num_same;avg_cut;num_cut]: 97976.25316455697 79 131022.0 150
