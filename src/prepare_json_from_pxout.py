@@ -85,6 +85,14 @@ def combine_to_infb(outs, refs, output_path):
     dump_jsonl(preds, output_path)
     print('done. saved id-pred-ref to {}'.format(output_path))
 
+def is_sep_by_assistant(testout_txt_fn):
+    out_flag = False
+    with open(testout_txt_fn) as br:
+        for aline in br.readlines():
+            if aline.startswith('assistant: '):
+                out_flag = True
+                break
+    return out_flag
 
 ALL_TASKS = [
     "passkey",
@@ -117,7 +125,7 @@ if __name__ == "__main__":
         raise('Error: system reference file [{}] is None or not exists.'.format(args.pxref_json))
 
     #import ipdb; ipdb.set_trace()
-    if args.sep_by_assistant:
+    if args.sep_by_assistant and is_sep_by_assistant(args.pxout_txt):
         outs = load_out_sep_by_assistant(args.pxout_txt)
     else:
         outs = load_out(args.pxout_txt)

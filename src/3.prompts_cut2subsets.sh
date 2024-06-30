@@ -15,13 +15,14 @@ do
 	echo $atask
 	#for mname in "claude2" "gpt4" "kimi" "yarn-mistral"
 	#for mname in "kimi" "yarn-mistral"
-	for mname in "claude2" "gpt4" "kimi" "yarn-mistral"
+	#for mname in "claude2" "gpt4" "kimi" "yarn-mistral"
+	for mname in "gpt4"
 	do
-		python eval_obtain_prompts.py \
+		python eval_obtain_prompts_cut2subsets.py \
 			--task $atask \
 			--model_path "Qwen/Qwen2-72B-Instruct" \
 			--cache_dir "/workspace/asr/megatron.20240606/qwen" \
-			--output_dir "../prompts-debug/" \
+			--output_dir "../prompts-debug-2subsets/" \
 			--model_name $mname
 	done
 done
