@@ -45,4 +45,7 @@ def parse_args() -> Namespace:
 
     p.add_argument("--sep_by_assistant", action='store_true', help="use assistant: for sample separating or not. [default=False]")  
 
+    p.add_argument("--ret5_file", type=str, default=None, help="ret5 (retrieved top-5) file in json format.")  
+    p.add_argument("--topn", type=int, default=5, help="keep topn chunks for the context for rag.")  
+
     return p.parse_args()

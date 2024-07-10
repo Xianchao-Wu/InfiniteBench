@@ -116,7 +116,7 @@ if __name__ == "__main__":
         input_text = create_prompt(eg, data_name, model_name, args.data_dir)
         #import ipdb; ipdb.set_trace()
 
-        print(f"====== Example {i} ======")
+        print(f"====== Example {i} ====== {data_name} ==== {model_name} ====")
         #import ipdb; ipdb.set_trace()
         prompt = get_prompt(
             tok, input_text, max_tokens=max_tokens, verbose=args.verbose
@@ -128,6 +128,7 @@ if __name__ == "__main__":
                 "prompt": prompt,
             }
         )
+        #break # for debug only TODO
     # finally, save prompts to output_path
     # TODO
     with open(output_path, 'w') as f:

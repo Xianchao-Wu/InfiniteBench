@@ -16,13 +16,21 @@ do
 	#for mname in "claude2" "gpt4" "kimi" "yarn-mistral"
 	#for mname in "kimi" "yarn-mistral"
 	#for mname in "claude2" "gpt4" "kimi" "yarn-mistral"
-	for mname in "gpt4"
+	ret5_dir="/workspace/asr/megatron.20240606/rag_data_0708/"
+	ret5_file="$ret5_dir/${atask}.e5_mistral_retriever_chunkbysents1200/test.json"
+	for mname in "gpt4" 
 	do
-		python -m ipdb eval_obtain_prompts.py \
-			--task $atask \
-			--model_path "Qwen/Qwen2-72B-Instruct" \
-			--cache_dir "/workspace/asr/megatron.20240606/qwen" \
-			--output_dir "../prompts-debug-12sets/" \
-			--model_name $mname
+		#for topn in 5 10 20 30 40 50
+		for topn in 60 70 80 90 100
+		do
+			python eval_obtain_prompts_ret5.py \
+				--task $atask \
+				--ret5_file $ret5_file \
+				--model_path "Qwen/Qwen2-72B-Instruct" \
+				--cache_dir "/workspace/asr/megatron.20240606/qwen" \
+				--output_dir "../prompts-debug-ret5/" \
+				--model_name $mname \
+				--topn $topn
+		done
 	done
 done

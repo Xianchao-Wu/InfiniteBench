@@ -56,15 +56,26 @@ def load_ref_longbook_choice_eng(pxref_json_fn, task):
             refs.append(ref)
     return refs
 
+def load_ref_sets7(ref_jsonl_fn):
+    refs = list()
+    with open(ref_jsonl_fn, 'r') as br:
+        for aline in br.readlines():
+            ref = json.loads(aline)
+            ref_ans = ref['answer']
+            refs.append(ref_ans)
+    return refs
+
 def load_ref(pxref_json_fn, task):
     if task == 'longbook_qa_eng':
         return load_ref_longbook_qa_eng(pxref_json_fn)
     elif task == 'longbook_choice_eng':
         return load_ref_longbook_choice_eng(pxref_json_fn, task)
     else:
-        raise ValueError("task={} not supported yet.".format(task))
+        #raise ValueError("task={} not supported yet.".format(task))
+        return load_ref_sets7(pxref_json_fn)
 
 def combine_to_infb(outs, refs, output_path):
+    #import ipdb; ipdb.set_trace()
     max_len = min(len(outs), len(refs))
     if len(outs) < len(refs):
         print("Warning: {} lines in prediction, less than {} lines in ref".format(len(outs), len(refs)))
@@ -130,6 +141,7 @@ if __name__ == "__main__":
     else:
         outs = load_out(args.pxout_txt)
 
+    #import ipdb; ipdb.set_trace()
     refs = load_ref(args.pxref_json, args.task)
 
     # determine the output json file name:

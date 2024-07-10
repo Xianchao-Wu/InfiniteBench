@@ -7,10 +7,6 @@ import torch
 from torch import Tensor
 from transformers import AutoTokenizer
 
-import tiktoken
-
-gpt4_tokenizer = tiktoken.encoding_for_model('gpt-4-turbo')
-
 from eval_utils import (
     create_prompt,
     load_data,
@@ -47,11 +43,7 @@ def truncate_by_tokens(input, tok, max_tokens, manner: str = "middle",
     print(f"# tokens after: {len_after}")
     assert len_after <= len_before
     assert len_after <= max_tokens
-
-    # is_cut = True -> pruned, is_cut = False -> not pruned and kept NOTE
-    is_cut = len_after < len_before
-
-    return tok.decode(tokens), is_cut, len_after
+    return tok.decode(tokens, skip_special_tokens=True)
 
 def get_prompt(
     tok: AutoTokenizer,
@@ -63,7 +55,7 @@ def get_prompt(
     Truncate down to 128k then make inference.
     """
     print("Truncating...")
-    input_text, is_cut, cur_tok = truncate_by_tokens(input_text, tok, TRUNCATE_LEN) 
+    input_text = truncate_by_tokens(input_text, tok, TRUNCATE_LEN) 
     if verbose:
         print("# chars:", len(input_text))
         print("=============== Input ===============")
@@ -71,7 +63,7 @@ def get_prompt(
         print("...")
         print(input_text[-200:])
         print("=====================================")
-    return input_text, is_cut, cur_tok # for prompt, to be used by existing open-source LLMs, such as qwen2-72b-instruct
+    return input_text # for prompt, to be used by existing open-source LLMs, such as qwen2-72b-instruct
 
 def load_tokenizer(
     model_name: str = None, 
@@ -81,6 +73,38 @@ def load_tokenizer(
     tok = AutoTokenizer.from_pretrained(model_name, 
             cache_dir=cache_dir)
     return tok  # type: ignore
+
+def load_ret5_data(ret5_json_file):
+    return json.load(open(ret5_json_file))
+
+def get_doc(item, topn, out_type="ret5"):
+    # out_type='ret5' or 'full'
+    # root@38f54e46033a:/workspace/asr/scrolls/evaluator/longbench# vi download_prep_openai_128k_longbenchins_aftericlr2024_20240530.py
+    if 'full' in out_type:
+        return item['sub-paragraphs']
+    else:
+        topN = topn # TODO change this to 10, 20 or larger values if necessary
+        out_docs = list()
+        for ctx in item['ctxs'][:topN]:
+            atitle = ctx['title']
+            atext = ctx['text']
+
+            adoc = 'title: {}, source: {}'.format(atitle, atext)
+            out_docs.append(adoc)
+        return '\n\n'.join(out_docs)
+
+def prep_for_prompt(eg, idx, args):
+    out_eg = dict()
+
+    out_eg['id'] = idx
+    out_eg['context'] = get_doc(eg, args.topn, 'ret5')
+    out_eg['input'] = eg['question']
+    out_eg['answer'] = eg['answers']
+
+    if 'multichoice_options' in eg:
+        out_eg['options'] = eg['multichoice_options']
+
+    return out_eg
 
 if __name__ == "__main__":
     model_name = "yarn-mistral"
@@ -93,34 +117,29 @@ if __name__ == "__main__":
 
     # Tokenizer
     max_tokens = DATA_NAME_TO_MAX_NEW_TOKENS[data_name]
-    #tok = load_tokenizer(args.model_path, args.cache_dir)
-    tok = gpt4_tokenizer # NOTE 这里使用的是gpt-4-turbo作为tokenizer来切割prompts, 128k
+    tok = load_tokenizer(args.model_path, args.cache_dir)
 
     # Data
     result_dir = Path(args.output_dir, data_name) # NOTE
     result_dir.mkdir(exist_ok=True, parents=True)
-    examples = load_data(data_name, data_dir=args.data_dir)
+
+    #examples = load_data(data_name, data_dir=args.data_dir)
+    examples = load_ret5_data(args.ret5_file)
+
+    topn = args.topn
     
     #TRUNCATE_LEN = 128 * 1024 - KEEP_LEN
     if args.stop_idx is None:
         args.stop_idx = len(examples)
-        output_path_same = (
-            result_dir / f"prompts_{data_name}_{TRUNCATE_LEN}_template_{model_name}_same.json"
-        )
-        output_path_cut = (
-            result_dir / f"prompts_{data_name}_{TRUNCATE_LEN}_template_{model_name}_cut.json"
+        output_path = (
+            result_dir / f"prompts_{data_name}_{TRUNCATE_LEN}_template_{model_name}_topn{topn}.json"
         )
     else:
-        output_path_same = (
-            result_dir / f"prompts_{data_name}_{args.start_idx}-{args.stop_idx}_{TRUNCATE_LEN}_same.json"  # noqa
+        output_path = (
+            result_dir / f"prompts_{data_name}_{args.start_idx}-{args.stop_idx}_{TRUNCATE_LEN}_topn{topn}.json"  # noqa
         )
-        output_path_cut = (
-            result_dir / f"prompts_{data_name}_{args.start_idx}-{args.stop_idx}_{TRUNCATE_LEN}_cut.json"  # noqa
-        )
-    
-    # prompts_same = not pruned NOTE
-    prompts_same, prompts_cut = [], []
-    num_same, num_cut, num_same_tok, num_cut_tok = 0, 0, 0, 0
+
+    prompts = []
     print("==== Evaluation ====")
     print(f"# examples: {len(examples)}")
     print(f"Start index: {args.start_idx}")
@@ -130,43 +149,30 @@ if __name__ == "__main__":
     for i in range(args.start_idx, args.stop_idx):
         #import ipdb; ipdb.set_trace()
         eg = examples[i] # a dict: dict_keys(['id', 'context', 'input', 'answer']) for 'longbook_qa_eng' one sample NOTE ||| dict_keys(['id', 'context', 'input', 'answer', 'options']) for 'longbook_choice_eng' one sample, eg['answer']=['Walking Georgie']; and eg['options']=['Walking Georgie', 'Taking care of Totty', 'Working in the dairy', 'Light housework']
+        
+        #import ipdb; ipdb.set_trace()
+        eg = prep_for_prompt(eg, i, args)
+
+        #import ipdb; ipdb.set_trace()
+        # TODO need to change 'eg' to the required good format, to use 'create_prompt' directly:
         input_text = create_prompt(eg, data_name, model_name, args.data_dir)
         #import ipdb; ipdb.set_trace()
 
-        print(f"====== Example {i} ======")
+        print(f"====== Example {i} ====== {data_name} ==== {model_name} ====")
         #import ipdb; ipdb.set_trace()
-        prompt, is_cut, cur_tok = get_prompt(
+        prompt = get_prompt(
             tok, input_text, max_tokens=max_tokens, verbose=args.verbose
         )
-        print('cutinfo[idx>=0,is_cut,data_name]: {} {} {}'.format(i, is_cut, data_name))
         if args.verbose:
             print(prompt)
-        prompts = prompts_cut if is_cut else prompts_same
         prompts.append(
             {
                 "prompt": prompt,
             }
         )
-        if is_cut:
-            num_cut += 1
-            num_cut_tok += cur_tok
-        else:
-            num_same += 1
-            num_same_tok += cur_tok
-    # finally, save prompts to output_path_same and output_path_cut
+        #break # for debug only TODO
+    # finally, save prompts to output_path
     # TODO
-    # NOTE 这是根据qwen2, gpt4的prompt template，以及openai的gpt-4-turbo的配置
-    # 来把infinite bench的两个数据集合，longbook_qa_eng以及longbook_choice_eng
-    # 切割成两个子集
-    with open(output_path_same, 'w') as f:
-        json.dump(prompts_same, f, indent=2)
-    
-    with open(output_path_cut, 'w') as f:
-        json.dump(prompts_cut, f, indent=2)
-    
-    avg_same, avg_cut = float(num_same_tok)/num_same, float(num_cut_tok)/num_cut
-    print('done.final_display:[avg_same;num_same;avg_cut;num_cut]: {} {} {} {} {}'.format(
-        avg_same, num_same, avg_cut, num_cut, data_name
-        )
-    )
+    with open(output_path, 'w') as f:
+        json.dump(prompts, f, indent=2)
 
