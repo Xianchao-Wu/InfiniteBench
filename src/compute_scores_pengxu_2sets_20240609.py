@@ -187,6 +187,7 @@ def get_score_one_code_debug(pred, label, model_name: str, args) -> bool:
     """
     Returns the score of one example in Code.Debug.
     """
+    #import ipdb; ipdb.set_trace()
     pred = pred.strip()
     label_c = label[1]
     fn_name = label[0]
@@ -244,6 +245,8 @@ def get_score_one_math_find(pred, label, model_name: str, args) -> bool:
 
 
 def get_score_one_longdialogue_qa_eng(pred, label, model_name: str, args) -> bool:
+    if 'STAMP PAID' in pred:
+        import ipdb; ipdb.set_trace()
     label = label[0]
     pred = pred.strip()
     for c in ["\n", ":", '"', "'", ".", ",", "?", "!", "{", "}"]:
@@ -420,6 +423,7 @@ def get_score(
 def compute_scores(preds_path, data_name: str, model_name: str, args):
     print("Loading prediction results from", preds_path)
     preds = list(iter_jsonl(preds_path))
+    #import ipdb; ipdb.set_trace()
     labels = get_labels(preds)
     preds = get_preds(preds, data_name)
 

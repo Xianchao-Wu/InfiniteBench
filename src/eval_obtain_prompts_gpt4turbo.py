@@ -15,10 +15,14 @@ from eval_utils import (
 )
 from args import parse_args
 
-MAX_POSITION_ID = 128 * 1024  # Determined by the model
-KEEP_LEN = 50 # TODO help
-TRUNCATE_LEN = 128 * 1024 - KEEP_LEN
+import tiktoken
 
+gpt128k_enc = tiktoken.encoding_for_model('gpt-4-turbo')
+oai_tokenizer = gpt128k_enc
+
+MAX_POSITION_ID = 128 * 1000  # Determined by the model
+KEEP_LEN = 20 # TODO help
+TRUNCATE_LEN = 128 * 1000 - KEEP_LEN
 
 def truncate_input(input: list, max_length: int, manner="middle"):
     if len(input) <= max_length:
@@ -43,10 +47,10 @@ def truncate_by_tokens(input, tok, max_tokens, manner: str = "middle",
     print(f"# tokens after: {len_after}")
     assert len_after <= len_before
     assert len_after <= max_tokens
-    return tok.decode(tokens, skip_special_tokens=True)
+    return tok.decode(tokens)
 
 def get_prompt(
-    tok: AutoTokenizer,
+    tok,
     input_text: str,
     max_tokens: int,
     verbose: bool = False,
@@ -65,14 +69,14 @@ def get_prompt(
         print("=====================================")
     return input_text # for prompt, to be used by existing open-source LLMs, such as qwen2-72b-instruct
 
-def load_tokenizer(
-    model_name: str = None, 
-    cache_dir: str = None,
-) -> AutoTokenizer:
-    print("Loading tokenizer: {}".format(model_name))
-    tok = AutoTokenizer.from_pretrained(model_name, 
-            cache_dir=cache_dir)
-    return tok  # type: ignore
+#def load_tokenizer(
+#    model_name: str = None, 
+#    cache_dir: str = None,
+#) -> AutoTokenizer:
+#    print("Loading tokenizer: {}".format(model_name))
+#    tok = AutoTokenizer.from_pretrained(model_name, 
+#            cache_dir=cache_dir)
+#    return tok  # type: ignore
 
 if __name__ == "__main__":
     model_name = "yarn-mistral"
@@ -84,21 +88,22 @@ if __name__ == "__main__":
     data_name = args.task
     
     if args.max_seq_len is not None and args.max_seq_len > 0:
-        TRUNCATE_LEN = args.max_seq_len #128 * 1024 - KEEP_LEN
+        TRUNCATE_LEN = args.max_seq_len #128 * 1000 - 20
 
     print(TRUNCATE_LEN)
     #import ipdb; ipdb.set_trace()
 
     # Tokenizer
     max_tokens = DATA_NAME_TO_MAX_NEW_TOKENS[data_name]
-    tok = load_tokenizer(args.model_path, args.cache_dir)
+    #tok = load_tokenizer(args.model_path, args.cache_dir)
+    tok = oai_tokenizer
 
     # Data
     result_dir = Path(args.output_dir, data_name) # NOTE
     result_dir.mkdir(exist_ok=True, parents=True)
     examples = load_data(data_name, data_dir=args.data_dir)
     
-    #TRUNCATE_LEN = 128 * 1024 - KEEP_LEN
+    #TRUNCATE_LEN = 128 * 1000 - 20
     if args.stop_idx is None:
         args.stop_idx = len(examples)
         output_path = (

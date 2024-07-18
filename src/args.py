@@ -1,6 +1,7 @@
 from argparse import ArgumentParser, Namespace
 from eval_utils import DATA_NAME_TO_MAX_NEW_TOKENS
 
+max_seq_len = 128 * 1024 - 50
 
 def parse_args() -> Namespace:
     p = ArgumentParser()
@@ -47,5 +48,7 @@ def parse_args() -> Namespace:
 
     p.add_argument("--ret5_file", type=str, default=None, help="ret5 (retrieved top-5) file in json format.")  
     p.add_argument("--topn", type=int, default=5, help="keep topn chunks for the context for rag.")  
+
+    p.add_argument("--max_seq_len", type=int, default=max_seq_len, help="for prompt generation, max sequence length to prepare the prompt.")  
 
     return p.parse_args()

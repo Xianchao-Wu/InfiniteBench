@@ -45,7 +45,9 @@ def load_ref_longbook_choice_eng(pxref_json_fn, task):
     refs = list()
     with open(pxref_json_fn) as br:
         file_contents = br.read()
+        #import ipdb; ipdb.set_trace()
         file_contents_json = json.loads(file_contents)
+        #import ipdb; ipdb.set_trace()
         for asample in file_contents_json:
             #ref = asample['answers'] # NOTE keep this as a list!
             #refs.append(ref)
