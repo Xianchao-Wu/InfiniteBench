@@ -383,6 +383,8 @@ def get_score_one(
 
 
 def get_labels(preds: list) -> list[str]:
+    if preds is None or len(preds) == 0:
+        raise ValueError("preds is empty. no prediction output from the llm.")
     possible_label_keys = ["ground_truth", "label"]
     for label_key in possible_label_keys:
         if label_key in preds[0]:
@@ -415,21 +417,21 @@ def get_score(
     scores = []
     for label, pred in tqdm(zip(labels, preds)):
         score = get_score_one(pred, label, data_name, model_name, args)
-        print('pred={}, label={}, score={}, data_name={}'.format(pred, label, score, data_name))
+        #print('pred={}, label={}, score={}, data_name={}'.format(pred, label, score, data_name))
         scores.append(score)
     return sum(scores) / len(scores)
 
 
 def compute_scores(preds_path, data_name: str, model_name: str, args):
-    print("Loading prediction results from", preds_path)
+    #print("Loading prediction results from", preds_path)
     preds = list(iter_jsonl(preds_path))
     #import ipdb; ipdb.set_trace()
     labels = get_labels(preds)
     preds = get_preds(preds, data_name)
 
     acc = get_score(labels, preds, data_name, model_name, args)
-    print('final display: ', acc, preds_path, data_name, model_name, args.use_zero_scrolls)
-
+    #print('final display: ', acc, preds_path, data_name, model_name, args.use_zero_scrolls)
+    print(acc, data_name, model_name, args.use_zero_scrolls, preds_path)
 
 ALL_TASKS = [
     #"passkey",

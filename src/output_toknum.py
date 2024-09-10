@@ -41,4 +41,4 @@ for apred in predictions:
 
 avg_len = all_len/float(len(predictions))
 
-print(avg_len)
+print('final display: avg_len', avg_len, afile)

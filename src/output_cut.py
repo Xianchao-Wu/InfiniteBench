@@ -54,4 +54,5 @@ with open(outfn, 'w') as bw:
     avg_len = all_len/float(len(predictions))
     avg_len2 = all_len2/float(len(predictions))
 
-print(avg_len, avg_len2)
+print('final display [before/after tok.num]:', avg_len, avg_len2, afile, outfn)
+

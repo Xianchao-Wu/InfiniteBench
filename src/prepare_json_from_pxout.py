@@ -32,7 +32,15 @@ def load_out(pxout_txt_fn):
     return outs
 
 def load_ref_longbook_qa_eng(pxref_json_fn):
+    import ipdb; ipdb.set_trace()
     refs = list()
+    with open(pxref_json_fn, 'r') as br:
+        for aline in br.readlines():
+            ref = json.loads(aline)
+            ref_ans = ref['answer']
+            refs.append(ref_ans)
+    return refs
+    '''refs = list()
     with open(pxref_json_fn) as br:
         file_contents = br.read()
         file_contents_json = json.loads(file_contents)
@@ -40,10 +48,18 @@ def load_ref_longbook_qa_eng(pxref_json_fn):
             ref = asample['answers'] # NOTE keep this as a list!
             refs.append(ref)
     return refs
+    '''
 
 def load_ref_longbook_choice_eng(pxref_json_fn, task):
+    #import ipdb; ipdb.set_trace()
     refs = list()
-    with open(pxref_json_fn) as br:
+    with open(pxref_json_fn, 'r') as br:
+        for aline in br.readlines():
+            ref = json.loads(aline)
+            ref_ans = get_answer(ref, task) #ref['answer']
+            refs.append(ref_ans)
+    
+    '''with open(pxref_json_fn) as br:
         file_contents = br.read()
         #import ipdb; ipdb.set_trace()
         file_contents_json = json.loads(file_contents)
@@ -55,7 +71,7 @@ def load_ref_longbook_choice_eng(pxref_json_fn, task):
             asample['answer'] = asample['answers']
             #import ipdb; ipdb.set_trace()
             ref = get_answer(asample, task) 
-            refs.append(ref)
+            refs.append(ref)'''
     return refs
 
 def load_ref_sets7(ref_jsonl_fn):
@@ -68,6 +84,7 @@ def load_ref_sets7(ref_jsonl_fn):
     return refs
 
 def load_ref(pxref_json_fn, task):
+    #return load_ref_sets7(pxref_json_fn)
     if task == 'longbook_qa_eng':
         return load_ref_longbook_qa_eng(pxref_json_fn)
     elif task == 'longbook_choice_eng':
@@ -96,7 +113,7 @@ def combine_to_infb(outs, refs, output_path):
             }
         )
     dump_jsonl(preds, output_path)
-    print('done. saved id-pred-ref to {}'.format(output_path))
+    ###print('done. saved id-pred-ref to {}'.format(output_path))
 
 def is_sep_by_assistant(testout_txt_fn):
     out_flag = False
@@ -135,6 +152,8 @@ if __name__ == "__main__":
         raise('Error: system prediction file [{}] is None or not exists.'.format(args.pxout_txt))
     
     if args.pxref_json is None or not Path(args.pxref_json).exists():
+        import ipdb; ipdb.set_trace()
+        print('TODO pxref_json is none or not exists', args.pxref_json)
         raise('Error: system reference file [{}] is None or not exists.'.format(args.pxref_json))
 
     #import ipdb; ipdb.set_trace()
@@ -153,10 +172,8 @@ if __name__ == "__main__":
     else:
         output_path = args.pxout_ref_json
 
-    print('combine tst.out and ref, output to file: {}'.format(output_path))
+    print('combine tst.out and ref, output to file: {}, for scoring'.format(output_path))
 
     # combine tst.out and ref to <ref, test.out> for next step scoring:
     infb_json_fn = combine_to_infb(outs, refs, output_path)
-
-
 

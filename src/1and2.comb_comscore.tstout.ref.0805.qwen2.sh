@@ -65,7 +65,7 @@ function longbook_eng_eval(){
 # TODO passkey_5_generate_70b_test_greedy_0_2000_30.txt_0920
 
 #for afile in `ls $sets12/*/*start*end???`
-for afile in `ls $sets12/*/*72b_instruct.txt`
+for afile in `ls $sets12/*/*130048*72b_instruct.txt`
 do
 	echo $afile
 	#for task_name in passkey number_string kv_retrieval longbook_sum_eng longbook_qa_eng longbook_qa_chn longbook_choice_eng longdialogue_qa_eng math_calc math_find code_debug code_run 
@@ -73,17 +73,28 @@ do
 	#for task_name in code_run kv_retrieval  
 	#for task_name in passkey number_string kv_retrieval longbook_sum_eng longbook_qa_eng longbook_qa_chn longbook_choice_eng longdialogue_qa_eng math_calc math_find code_debug code_run 
 	#for task_name in longbook_sum_eng longdialogue_qa_eng
-	for task_name in longbook_sum_eng
+	#for task_name in longbook_sum_eng
+	for task_name in longbook_sum_eng longdialogue_qa_eng longbook_qa_eng longbook_choice_eng
 	do
+		if [[ $task_name == "longbook_sum_eng" || $task_name == "longdialogue_qa_eng" ]];then
+			# for longbook_sum_eng and longdialogue_qa_eng TODO
+			pxref_json="$refdir/${task_name}.jsonl"
+		else
+			# for longbook_qa_eng and longbook_choice_eng TODO
+			pxref_json="../../${task_name}/test.json"
+		fi
+		echo $pxref_json $task_name
+
 		if [[ $afile =~ $task_name ]]
 		then
-			# TODO
 			echo "do $task_name for $afile"
 			python output_toknum.py $afile
+			longbook_eng_eval ${task_name} ${afile} ${pxref_json}
+
 			afile2=$afile.keep1k
 			python output_cut.py $afile $afile2
 			#pxref_json="../../${task_name}/test.json"
-			pxref_json="$refdir/${task_name}.jsonl"
+			#pxref_json="$refdir/${task_name}.jsonl"
 			longbook_eng_eval ${task_name} ${afile2} ${pxref_json}
 			echo "--------"
 			#break
